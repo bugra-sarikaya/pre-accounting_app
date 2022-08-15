@@ -1,0 +1,22 @@
+It was started to read a software tutorial book about C#. NET [1].
+An online textual C#.NET tutorial was found [2].
+Reason of using capital "E" letter while coding, was learned on a webpage [3] of Stack Overflow.
+A video tutorial about C# .NET, was watched [4].
+Reading of the software book, was completed.
+It was decided to watch another tutorial video playlist [5] whose owner is SendeKodYaz.
+A beneficial textual tutorial [6] about positional patterns, was found while trying to find an explanation for understanding a lecture of Gencay Yıldız [7].
+It was reached to 288th video of the playlist [8] whose owner is Gencay Yıldız.
+A tutorial video playlist [9] whose owner is Emir Özdemir, was watched for learning C# forms.
+Another tutorial video playlist [10] of Emir Özdemir, was watched for learning connection of C# and SQL.
+Another playlist [11] of Emir Özdemir, was watched for reinforcing knowledge of C# basics.
+[1] Yeni Başlayanlar İçin C# .NET, Abdullah Elen, Emre Avuçlu
+[2] https://dotnettutorials.net/course/csharp-dot-net-tutorials/
+[3] https://stackoverflow.com/questions/10687016/what-is-e-in-floating-point
+[4] https://youtu.be/GcFJjpMFJvI
+[5] https://www.youtube.com/playlist?list=PLSuhOGv534vTFRq9dFB9Yn7su-4hIc0xg
+[6] https://endjin.com/blog/2019/10/dotnet-csharp-8-positional-patterns-deconstructor-pitfall
+[7] https://youtu.be/OCVmyrsDB6Y
+[8] https://www.youtube.com/watch?v=eg7Eg4eqiSQ&list=PLQVXoXFVVtp3e_urGZcMNAHx2Eo4Rm5Xk&index=288&ab_channel=Gen%C3%A7ayY%C4%B1ld%C4%B1z
+[9] https://youtube.com/playlist?list=PLD54hVH5EaMbh9eLt3oZMuP0EMJaHaIwd
+[10] https://youtube.com/playlist?list=PLD54hVH5EaMbGsUpcM96ZRAbNpREfrvpR
+[11] https://youtube.com/playlist?list=PLD54hVH5EaMbBLwhwLGuVQePynhq6-hqd

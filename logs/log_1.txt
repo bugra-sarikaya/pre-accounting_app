@@ -1,0 +1,9 @@
+A beneficial C# tutorial playlist [1] which contains 409 videos, was found but because of its long duration, watching process was delayed at 83rd video.
+A tutorial of C# language on beginner level, was watched [2].
+After completing the beginner level tutorial, it was decided to continue to the long tutorial.
+It was reached to 107th video [3] of the long tutorial whose owner is Gencay Yıldız.
+A GitHub repository with name which is "pre-accounting_app", was created [4].
+[1] https://youtube.com/playlist?list=PLQVXoXFVVtp3e_urGZcMNAHx2Eo4Rm5Xk
+[2] https://youtu.be/GhQdlIFylQ8
+[3] https://www.youtube.com/watch?v=IeThN9PRSOA&list=PLQVXoXFVVtp3e_urGZcMNAHx2Eo4Rm5Xk&index=107&ab_channel=Gen%C3%A7ayY%C4%B1ld%C4%B1z
+[4] https://github.com/bugra-sarikaya/pre-accounting_app
