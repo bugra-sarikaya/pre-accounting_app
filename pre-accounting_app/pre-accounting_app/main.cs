@@ -1,12 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Windows.Forms;
 
 namespace pre_accounting_app {
     internal class main {
         static void Main(string[] args) {
+            login_form login_form = new login_form();
+            Application.Run(login_form);
+
+            //Console.ReadLine();
 
         }
     }
