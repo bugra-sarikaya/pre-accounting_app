@@ -5,9 +5,6 @@ namespace pre_accounting_app {
         static void Main(string[] args) {
             login_form login_form = new login_form();
             Application.Run(login_form);
-
-            //Console.ReadLine();
-
         }
     }
 }
