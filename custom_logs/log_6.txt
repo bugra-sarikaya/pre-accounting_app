@@ -1,0 +1,52 @@
+A minimize symbol was drawn on Aseprite by benefiting previous artwork which is close symbol.
+After some researchs, it was realized that "static" keyword of C#, is different than "static" keyword of C.
+Defult access modifier of a class member, which is private, was remembered on a webpage [1].
+Redundant variables and lines on "close_button.cs", were removed.
+A new fact was learned from a webpage [2] and it was that "instead" phrase without "of", is a adverb.
+QuillBot [3] was used to change "It was learned" sentence to "A new fact learned" sentence.
+It was learned that putting a code line after "if - else if" statements instead of "if - else if" statements' insides, is not a best coding style always becuse maybe program does not exeute inside of the "if - else if" statements.
+It was noticed that GitHub was not storing custom log files after second log file to solve this, "logs" folder was renamed as "custom_logs" because it was found that "*.log" line existed in ".gitignore" file.
+"MouseLeave" event which was remembered on a webpage [4], was used for disabling pressing button effect.
+Comment lines were added to created code files.
+"public" access modifiers, were changed to "internal".
+Intellisense settings were changed again for trying to disable autocomplete.
+For storing object with "this" keyword inside object's constructor, a method was found in webpage [5] and it was used.
+While trying write "ref" keyword to constructor parameters and arguments for implementing method of pass by reference to decrease memory usage, some errors occured and to solve this, some researchs was done.
+While doing the research, it was realized that properties of passed form variable, can be changed without "ref" keyword.
+From 4 sources [6] [7] [8] [6], it was learned that pass by value method of reference type variables, is similar to pass by reference method and it changes properties of original variable but still it copies reference value.
+Upcasting and downcasting were learned from a webpage [10].
+"unsuggested" word could not be found in online dictionaries except Wiktionary [12].
+For using derived class as base class argument with "ref" keyword, a not recommened method which is upcasting, was found on a webpage [13] and it was used.
+Variable with "ref" keyword, could not be used in lambda expression and two solutions which are using local variable and using wrapper function on "EventHandler" function, were found from 2 webpages [14] [15].
+Using local variable method was implemented and the research was completed but it was considered that these solution may gives error in the future because of using a not recommended method.
+An image of Englis time chart from a webpage [16], was examined for creating grammatically correct sentences.
+Program was using 30 MB but after using "ref" keywords, it was noticed that program is still using 30 MB and because of these unnecessary usages, "ref" keyword implementations were removed.
+[1] https://www.c-sharpcorner.com/interview-question/what-is-the-default-access-modifier-for-a-class-in-c-sharp
+Difference between "delay" and "postpone" words, was learned from a webpage [17].
+Writing internship report and completing playlist of Gençay Yıldız [18] and playlist of SendeKodYaz [19], were delayed.
+A minimize button class was written by looking close button class.
+"Parent" property was found while trying to find a suitable class member for accessing parent component, in suggestion list of Intellisense and after examining its usage from an online document of Microsoft [20].
+After using "Parent" property in minimize button class with minimizing function which was found in CodeProject [21], it was used in other classes.
+Lambda expression which was written for adding extra paramaters to "EventHandler" function, was removed after using "Parent" property in top panel class but program gave an exception which is "System.NullReferenceException" for "Parent".
+To solve previous exception, a research was done but before completing research, it was realized that "Parent" usage of minimize book, executed after installing program and other "Parent" usage, which gives exception, was executed before installation.
+Research was cancelled and "Parent" usages, except in minimize button class, was removed.
+Finally minimize button was completed but minimizing effect is not smooth.
+[2] https://grammar.collinsdictionary.com/english-usage/what-is-the-difference-between-instead-and-instead-of
+[3] https://quillbot.com/
+[4] https://faculty.cs.niu.edu/~hutchins/csci473/mouse.htm
+[5] user166390, Jacksonkr, https://stackoverflow.com/questions/6528100/how-to-pass-this-by-ref-in-c, 29 June 2011 22:49 (answered), 4 May 15:04 (updated).
+[6] https://www.delftstack.com/howto/csharp/pass-objects-by-reference-in-csharp/, 27 March 2021.
+[7] https://www.informit.com/articles/article.aspx?p=2731935&seqNum=18, 27 October 2016
+[8] MakePeaceGreatAgain, https://stackoverflow.com/questions/49188497/passing-an-object-as-a-constructor-parameter-seems-to-be-passing-by-reference-in, 9 March 2018 at 7:32
+[9] Thomas Levesque, this, https://stackoverflow.com/questions/23041297/why-are-objects-automatically-passed-by-reference, 13 April 2014 10:11 (answered), 31 January 2020 16:49 (edited).
+[10] sofiaa, https://www.geeksforgeeks.org/upcasting-vs-downcasting-in-java/, 11 October 2021.
+[12] wiktionary.org, 4 March 2019 08:11.
+[13] Botz3000, https://stackoverflow.com/questions/13952914/cant-cast-a-derived-class-to-its-base-type, 19 Dec 2012 12:56.
+[14] sree, https://stackoverflow.com/questions/1365689/cannot-use-ref-or-out-parameter-in-lambda-expressions, 21 September 2020 7:34.
+[15] Aldarrion, https://stackoverflow.com/questions/51045048/no-overload-for-matches-delegate, 26 June 2018 14:33.
+[16] 7ESL, https://www.pinterest.com/pin/22025485666288831/.
+[17] koshal, https://www.differencebetween.com/difference-between-postpone-and-vs-delay, 13 June  2011.
+[18] Gençay Yıldız, https://youtube.com/playlist?list=PLQVXoXFVVtp3e_urGZcMNAHx2Eo4Rm5Xk, 7 January 2022.
+[19] SendeKodYaz, https://youtube.com/playlist?list=PLSuhOGv534vTFRq9dFB9Yn7su-4hIc0xg, 4 November 2021.
+[20] https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.control.parent?view=windowsdesktop-6.0
+[21] David Melcher, https://www.codeproject.com/Questions/153891/How-to-minimize-a-form-in-C-net, 4 February 2011 7:19.

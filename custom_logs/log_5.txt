@@ -1,0 +1,51 @@
+Top border was removed by changing border style after examining a video tutorial [1].
+Method of adding event handler was remembered from an offiicial document [2].
+It was learned that C# does not have header files, from a webpage [3].
+It was remembered that "Ctrl + F4" shortcut closes current tab on Visual Studio, from a webpage [4].
+Login form was made movable by examining a video tutorial [5].
+A close symbol was drawn on Aseprite program.
+For adding more paramaters to MouseEvent handler, a lambda expression was used by using a code from a webpage [6].
+Panel and button components of login form, were coded in external class successfully after working on it hardly.
+It was learned that "1 up-to-date" in output of Visual Studio after compiling, is nothing was changed, from a webpage [7].
+To change size button image, using "ImageList" method was learned from 2 sources [8] [9] but for resizing, using "Bitmap" method which was learned a source [10] was used because it was thought that using "ImageList" for just one image is not suitable.
+Close symbol was made thicker.
+While trying to decrease resizing value on exporting of Aseprite project, it was noticed that values which are smaller than 100%, decreases image symmetry.
+"new" keyword could not be used as parameters of constructor multiple times.
+Some methods from multiple sources, were tried to decrease quality loss, but none of them, worked.
+For decreasing image corruption, symbol thickness was increased to maximum and Aseprite project was exported as 300%.
+Close button made as borderless by benefiting a soruce [11].
+Close button size was decreased and button was moved away from right corner slightly.
+To change background color on mouse hover event, a code was used from a source [12].
+For changing opacity of background color, "FromArgb" was used form a source but it did not work.
+Also an overload function of "FromArgb", did not work.
+Method of changing "MouseOverBackColor" variable of "FlatAppearance", which was found a webpage [14], was worked.
+Usege of a timer event handler was implemented by benefiting 2 sources [15] [16] for change button color slowly.
+"ToString" function which was from a source [17], was used for convert an "int" value to "String" in "MessageBox".
+A function from a webpage [18], was utilized for changing button colors.
+Changing background color, was not liked and instead of this, symbol color was tried to change.
+"Refresh" function from a webpage [19], was used for updating color every tick.
+Alternative function of ""Refresh", which are "Update" and "Invalidate", were researched and difference between three of them, was read on 2 sources [20] [21].
+For exiting from program, System.Windows.Forms.Application.Exit" funciton which was found a webpage [22], was used on mouse click event ofcancel button.
+Close button symbol was set to change its color to red slowly when mouse is over on it but this feature may be changed in the future.
+[1] winforms, https://youtu.be/zSqmwjpkzmI, 10 Auguts 2021.
+[2] https://docs.microsoft.com/en-us/dotnet/desktop/winforms/controls/how-to-add-an-event-handler?view=netdesktop-6.0
+[3] Shadow The Kid Wizard, https://stackoverflow.com/questions/11814771/why-doesnt-c-sharp-have-header-files-will-the-namespace-take-care-of-everythin, 5 August 2012 07:57.
+[4] dsum27, https://stackoverflow.com/questions/32735755/visual-studio-shortcut-to-close-window-not-working, 19 August 2021 13:42.
+[5] Monarc Tips, https://youtu.be/gEtwEwCrWbE, 26 May 2020.
+[6] Hans Passant, https://stackoverflow.com/questions/33647405/how-can-i-add-an-additional-parameter-to-a-button-click-eventhandler, 11 November 2015 09:38.
+[7] Alex Farber, https://social.msdn.microsoft.com/Forums/vstudio/en-US/5f9c53e3-d611-4a9a-9f1a-72a1bcb1a7d1/basic-build-issue-0-successful-1-up-to-date-no-output, 20 September 2008 10:32. 
+[8] https://www.faqcode4u.com/faq/96301/how-can-i-make-the-image-size-smaller-on-a-button
+[9] https://docs.microsoft.com/tr-tr/dotnet/api/system.windows.forms.buttonbase.imagelist?view=windowsdesktop-6.0
+[10] Shell, BJS3D, https://stackoverflow.com/questions/24580962/how-to-set-size-of-the-button-image-dynamically-in-c, 5 July 2014 02:28 (answered), 16 July 2017 02:56 (edited).
+[11] Ben J, AustinWBryan, https://stackoverflow.com/questions/47837500/remove-button-border-windows-forms, 15 December 2017 18:42 (answered), 30 March 2020 08:26 (edited). 
+[12] SasithM, Jp Vinjamoori, https://stackoverflow.com/questions/34024612/change-button-color-on-mouse-hover, 9 July 2018 16:51 (answered), 9 July 2018 18:34(edited). 
+[13] bradgonesurfing, Martin Verjans, https://stackoverflow.com/questions/3020877/set-a-transparent-color, 19 February 2014 07:10 (answered), 8 December 2016 11:45 (edited).
+[14] Pritam Zope, https://www.c-sharpcorner.com/UploadFile/f5a10c/creating-custom-controls-in-C-Sharp/, 09 February 2017 (updated).
+[15] https://docs.microsoft.com/tr-tr/dotnet/api/system.windows.forms.timer.tick?view=windowsdesktop-6.0
+[16] Victor Stoddard, AustinWBryan, https://stackoverflow.com/questions/8159534/net-how-to-check-if-the-mouse-is-in-a-control, 7 November 2014 19:41 (answered), 7 May 2020 21:44 (edited).
+[17] Donald Byrd, https://stackoverflow.com/questions/1806265/how-to-display-integers-in-messagebox-in-visual-c, 27 November 2009 00:31.
+[18] Hiren Soni, https://www.c-sharpcorner.com/blogs/negative-image-in-c-sharp1, 06 September  2010 (updated).
+[19] VMAtm, https://stackoverflow.com/questions/7347714/how-to-refresh-or-flush-the-c-sharp-windows-form, 8 Sep  2011 12:15.
+[20] Justin R., HodlDwon, https://stackoverflow.com/questions/2286613/invalidate-vs-update, 18 February 2010 6:27(answered), 23 July 2014 17:52 (commented to answer).
+[21] Henk Holterman, https://stackoverflow.com/questions/952906/how-do-i-call-paint-event/952964#952964, 4 June 2009 20:39.
+[22] Udayakumar Thirupathi, https://stackoverflow.com/questions/17796151/close-form-button-event, 17 December 2018 17:20.

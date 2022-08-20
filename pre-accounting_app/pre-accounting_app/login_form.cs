@@ -2,8 +2,8 @@
 using System.Windows.Forms;
 
 namespace pre_accounting_app {
-    public class login_form : Form {
-        public login_form() {
+    internal class login_form : Form {
+        internal login_form() { // Constructor.
             Width = 300;
             Height = 500;
             StartPosition = FormStartPosition.CenterScreen;

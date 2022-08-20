@@ -1,0 +1,61 @@
+An example code block from a read book [1], was used for creating a Windows Form dynamically.
+"using System.Windows.Forms;" line could not be utilized and to solve this, "System.Windows.Forms" reference is added to project on Solution Explorer by benefiting an answer from Stack Overflow [1].
+Autocomplete feature of Visual Studio, was closed by accomplishing directives of a solution from Stack Overflow [2].
+Referencing style on these custom log files, was changed.
+"Show" function could not be used because it gave an error which is CS0012 and to solve this, "Systems" reference was added by examining answers of a webpage [4] from Reddit.
+It was understood that cause of all of these error, is creating an empty project instead of Windows Forms Project.
+"Show" function was used but login form disappeared after appearing and it was seen that using "ShowDialog" function, was suggested on two different webpages [5] [6].
+A difference between "Show" and "ShowDialog" functions were learned on an online video [7].
+IntelliCode suggestions were closed.
+It was learned that "b/w" is abbreviation of "between" preposition fron a webpage [8].
+Difference between declaration and definition of variable, was learned from a webpage [9].
+Assignments of Login form variables, were moved into constructor of a created external form by examining an online tutorial [10].
+A method for including external class, was learned on a webpage [11] but also it was learned that if classes namespaces are same, there is no need including external class with "using" keyword, from same webpage [11] and an online video tutorial [12].
+Instead of using "Show" or "ShowDialog" function "Application.Run()" phrase was used by utilizing a webpage [12].
+The referencing style was changed again to show time.
+An example code block from a read book [13], was used for creating a PictureBox.
+Program logo was chosen as previous internship project logo.
+Autocomplete feature of Intellisense, was closed again after reading instruction of a webpage [14].
+"Image.FromFile" function could not be used and to solve this, "System.Drawing" library was added as a reference to project on Solution Explorer by benefiting a webpage [15].
+Image was moved to "bin\Debug" folder of the project.
+It was learned that "using" keyword is a directive from an online official document [16] but other directives could not be found except preprocessor directives.
+Unnecessary library references were removed from code files.
+It was noticed that a console screen is opened when form appears and to solve this, output type is changed to "Windows Appliation" instead of changing application type to "Windows Forms Application", which is a solution from a webpage [17] because solution of webpage, could not be found in current version of IDE.
+X or Y coordinates could not be changed specifically and "Point" object was used to locate image by examining answers from a webpage [18].
+"Size" object was used for sizing image by benefiting an answer of a webpage [19].
+"this.Controls.Add" function which was found in a webpage [20], was used for displaying image.
+A value background color from a webpage [21], was inspired for assigning "BackColor" variable but after using, it was deleted because background of image is transparent.
+It was noticed that form component size values can not be any type other than "int" type and this situation was witnessed on a webpage [22] but its reason could not be found.
+[1] Abdullah Elen, Emre Avuçlu, Yeni Başlayanlar İçin C# .NET 1st Edition, page 186.
+To fit image to "PictureBox" component, "StretchImage" mode was used after examining two webpages [23] [24].
+A method which is using "Width" and "Height" properties of "Image" object to get size of image, was found on a webpage [25].
+It was learned that fields and propertes are different class members, from a webpage [26].
+Image size and picture box size were adjusted according to form size with a few calculations.
+Resizing and maximizing features of created form, was disabled by utilizign an answer from a webpage [27].
+[2] VMAtm, https://stackoverflow.com/questions/6639468/forms-does-not-exist-in-the-namespace-system-windows
+[3] JesseF, https://stackoverflow.com/questions/69490592/visual-studio-c-sharp-how-do-i-turn-off-autocomplete-not-intellisense
+[4] YuleTideCamel, GetMeABaconSandwich, https://www.reddit.com/r/learnprogramming/comments/8c2yn3/c_in_visual_studio_connecting_to_ms_sql/
+[5] sa_ddam213, https://stackoverflow.com/questions/13596167/win-form-disappears-after-it-is-loades-with-show
+[6] jdl, https://stackoverflow.com/questions/16777074/why-the-main-form-disappears
+[7] RashiCode, https://youtu.be/9Xj6AGQpwKo
+[8] https://en.wiktionary.org/wiki/b/w
+[9] SudhaSuresh, https://www.geeksforgeeks.org/difference-between-definition-and-declaration/
+[10] ForeSightERP, https://youtu.be/Em8uXm9RiWU
+[11] Alex, https://stackoverflow.com/questions/14728422/c-sharp-importing-class-into-another-class-doesnt-work
+[12] Learning Programming Tutorial, https://youtu.be/y56Ea-nzu3A
+[12] Chris Walter, https://stackoverflow.com/questions/11751749/creating-a-form-without-the-form-designer, 1 August 2012 02:59.
+[13] Abdullah Elen, Emre Avuçlu, Yeni Başlayanlar İçin C# .NET 1st Edition, page 226, January 2020.
+[14] Mitch Bartlett, https://www.technipages.com/visual-studio-turn-off-autocomplete.
+[15] Espen Harlinn, https://www.codeproject.com/Questions/144277/System-Drawing-Image-FromFile-does-not-work, 9 January 2011 04:06.
+[16] https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/using-directive, 18 June 2022.
+[17] Kevin, https://stackoverflow.com/questions/144701/how-do-i-convert-a-net-console-application-to-a-winforms-or-wpf-application, 9 April 2019 20:32.
+[18] https://stackoverflow.com/questions/8369999/change-the-location-of-an-object-programmatically.
+[19] Vloxxity, https://stackoverflow.com/questions/13377026/what-is-the-code-to-resize-a-picturebox-in-c,  14 November 2012 10:29.
+[20] jack_2009, https://social.msdn.microsoft.com/Forums/vstudio/en-US/aeda8e3d-6904-4d75-81c1-f5c4e87f3348/dynamically-show-images-on-win-forms?forum=csharpgeneral, 23 July 2008 10:23.
+[21] IAmABadCoder, https://www.codeproject.com/Questions/677508/change-back-color-of-a-picture-box, 2 Nov 2013 00:00.
+[22] https://stackoverflow.com/questions/45738803/how-to-set-size-of-panel-in-c-sharp-as-float-double-data-type
+[23] https://stackoverflow.com/questions/16822138/fit-image-into-picturebox
+[24] OriginalGriff, https://www.codeproject.com/Questions/5294052/Resize-image-to-fit-in-picturebox-Csharp-windowsfo, 5 Febryart 2021 2:00.
+[25] https://stackoverflow.com/questions/6455979/how-to-get-the-the-dimensions-of-an-image-file
+[26] Jon Skeet, https://stackoverflow.com/questions/1235013/what-is-a-member-vs-a-property, 5 August 2009 18:45.
+[27] James Hill, https://stackoverflow.com/questions/7970262/disable-resizing-of-a-windows-forms-form, 1 November 2011 17:26.

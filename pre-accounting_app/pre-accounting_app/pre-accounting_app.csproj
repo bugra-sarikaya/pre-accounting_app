@@ -46,6 +46,9 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="main.cs" />
+    <Compile Include="minimize_button.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="top_panel.cs">
       <SubType>Component</SubType>
     </Compile>

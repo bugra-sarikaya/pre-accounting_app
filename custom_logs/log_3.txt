@@ -1,0 +1,47 @@
+Microsoft SQL Server 2019 and SQL Server Management Studio v18.12.1 were installed while watching an instruction video [1].
+Two sources [2] [3] were read for learning difference between pre-accounting and general accounting.
+By benefiting a tutorial video [4], a database which is named as "paa_db", was created and a table whose name is "users", was added into this database.
+After trying to change "users" table, program gave an error with "Saving changes is not permitted..." text and to solve this, preventing saving changes feature was deactived after reading a webpage [5] about SQL.
+To learn necessity of capitalizing ID abbreviation for naming a column, several webpages was read shortly and any strict rule could not found to do not naming a column as "user_id".
+A blank internship diary document was prepared by using one of the first internship documents.
+The blank document pages were renumared after examining video [6] of Emre Kilinc and an official internship instructions document which has named as "Staj Raporu Formatı" [7].
+While developing project, it was started to write internship diary.
+It was decided to use "had to be" as past tense of "must" after reading a webpage about grammar, shortly.
+"from entering" phrase was found in a webpage [9] and it was written for completing a sentence in internship diary.
+Suitability of using "C# .NET" expression, was researched and its appropriateness was found in a webpage [10] of Stack Overflow.
+About writing references into internship diary, strict referencing rules were ignored because their obligations are not existent in internship instructions of the university.
+Description of the GitHub repository was changed by changing ".Net" phrase to ".NET".
+Suitability of using "was changed by changing" phrase from previous line, was researched and it was decided that it is a correct usage after examining first results of web browser search [11].
+It was learned that there are multiple IDEs for C#, by examining a webpage [12] shortly.
+Plural form of abbreviation was learned from a webpage [13] about grammar for writing previous line correctly.
+A row which contains simple admin data, was added into the created database by examining a watched tutorial video [4] but explained auto incrementing feature was not activated.
+Usage of "data" word, was learned by reading a webpage [14] shortly for writing previous line.
+Visualt Studio Community 2022 was updated to v17.3.1.
+A project whose template is "Empty Project (.NET Framework)", was created with "paa" name 4.8 version of .NET Framework.
+Project name was changed to "pre-accounting_app" by creating another project.
+"main.cs" file was added instead of "Program.cs" file.
+By benefiting a webpage [16] of Stack Overflow, adding new line features of Visual Studio for C#, were deactivated.
+After learning meaning of "0 references" phrase on text editor of Visual Studio from a webpage [17], it was enabled by accomplishing instructions of an answer on a webpage [18].
+Created database was exported by utilizing instructions of an online video tutorial [19].
+After moving a copy of Visual Studio project file to local GitHub repository,  a ".gitignore" file which was copied from a test repository which ignores redundant Visual Studio files, was added.
+Suitability using of multiple "a/an" determiners with "and" conjuction was searched and it was found as correct in a grammar webpage [20]
+[1] https://youtu.be/QsXWszvjMBM2
+[2] https://www.parasut.com/blog/on-muhasebe-ile-genel-muhasebe-arasindaki-farklar
+[3] https://bizimhesap.com/blog-detay/on-muhasebe-ile-genel-muhasebe-arasindaki-farklar-nelerdir
+[4] https://youtu.be/pwGhMz8-3gs
+[5] https://www.ismailgursoy.com.tr/sql-server-saving-changes-is-not-permitted-hatasi/
+[6] https://youtu.be/eCGwu2p0zqM
+[7] https://bmb.cu.edu.tr/storage/belgeler/staj/rapor.docx
+[8] https://www.macmillandictionary.com/dictionary/british/must_1
+[9] https://www.ibm.com/docs/en/zos/2.1.0?topic=jes3-planning-security
+[10] https://stackoverflow.com/questions/1643382/is-it-c-sharp-or-c-net
+[11] https://www.google.com/search?q=%22was+changed+by+changing%22&oq=%22was+changed+by+changing%22&aqs=chrome..69i57.936j0j7&sourceid=chrome&ie=UTF-8
+[12] https://www.guru99.com/best-csharp-ide.html
+[13] https://www.grammarbook.com/blog/apostrophes/the-apostrophe-with-numbers-letters-and-abbreviations/
+[14] https://www.britannica.com/dictionary/eb/qa/Is-Data-Singular-or-Plural-
+[15] https://youtu.be/nu6dHJrAm4Q
+[16] https://stackoverflow.com/questions/4860933/how-to-make-visual-studio-not-put-on-a-new-line
+[17] https://community.gamedev.tv/t/unityscript-0-references-meaning/134570
+[18] https://social.msdn.microsoft.com/Forums/en-US/70677600-17ee-4ea3-bb25-e8d29bdf45f3/0-references
+[19] https://youtu.be/XLzV_gagkZc
+[20] https://www.thoughtco.com/a-an-and-1692639
