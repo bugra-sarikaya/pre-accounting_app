@@ -49,6 +49,9 @@
     <Compile Include="minimize_button.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="textbox_input.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="top_panel.cs">
       <SubType>Component</SubType>
     </Compile>

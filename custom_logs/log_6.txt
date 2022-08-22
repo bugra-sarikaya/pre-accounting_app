@@ -21,16 +21,16 @@ Variable with "ref" keyword, could not be used in lambda expression and two solu
 Using local variable method was implemented and the research was completed but it was considered that these solution may gives error in the future because of using a not recommended method.
 An image of Englis time chart from a webpage [16], was examined for creating grammatically correct sentences.
 Program was using 30 MB but after using "ref" keywords, it was noticed that program is still using 30 MB and because of these unnecessary usages, "ref" keyword implementations were removed.
-[1] https://www.c-sharpcorner.com/interview-question/what-is-the-default-access-modifier-for-a-class-in-c-sharp
 Difference between "delay" and "postpone" words, was learned from a webpage [17].
 Writing internship report and completing playlist of Gençay Yıldız [18] and playlist of SendeKodYaz [19], were delayed.
-A minimize button class was written by looking close button class.
+A minimize button which turns blue when cursor is over it, was written by looking close button class.
 "Parent" property was found while trying to find a suitable class member for accessing parent component, in suggestion list of Intellisense and after examining its usage from an online document of Microsoft [20].
 After using "Parent" property in minimize button class with minimizing function which was found in CodeProject [21], it was used in other classes.
 Lambda expression which was written for adding extra paramaters to "EventHandler" function, was removed after using "Parent" property in top panel class but program gave an exception which is "System.NullReferenceException" for "Parent".
 To solve previous exception, a research was done but before completing research, it was realized that "Parent" usage of minimize book, executed after installing program and other "Parent" usage, which gives exception, was executed before installation.
 Research was cancelled and "Parent" usages, except in minimize button class, was removed.
 Finally minimize button was completed but minimizing effect is not smooth.
+[1] https://www.c-sharpcorner.com/interview-question/what-is-the-default-access-modifier-for-a-class-in-c-sharp
 [2] https://grammar.collinsdictionary.com/english-usage/what-is-the-difference-between-instead-and-instead-of
 [3] https://quillbot.com/
 [4] https://faculty.cs.niu.edu/~hutchins/csci473/mouse.htm

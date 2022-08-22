@@ -6,11 +6,11 @@ namespace pre_accounting_app {
     internal class close_button : Button {
         int red = 0;
         int limit_reducer = 0;
-        int transition_value = 17 * 4; // 17 is a divisor of 255.
+        int transition_value = 17 * 5; // 17 is a divisor of 255.
         internal int gap;
         Bitmap bitmap_close_symbol;
         internal close_button(top_panel top_panel) { // Constructor.
-            float scale = 0.7f;
+            float scale = 0.75f;
             Width = (int)(top_panel.Height * scale);
             Height = Width;
             gap = (top_panel.Height - Height) / 2;

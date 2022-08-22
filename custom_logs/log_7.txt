@@ -1,0 +1,37 @@
+Size values of login form, were increased.
+Any method for decelerating the minimizing window process smoothly, could not be found.
+To increase height of text box, a method which is enabling multiline feature, was found in Stack Overflow [1] and it was used.
+A function was found in Stack Oveflow [2] to change font size of textbox and it was used.
+Logo was edited.
+Transition value of top panel buttons, were inreased to accelerate button effects.
+A tutorial video about "TextBox" in YouTube [3], was examined.
+It was noticed that deleted "Form1.cs" and "Form1.Designer.cs" files are still in Visual Studio project folder and then, they were deleted also in file explorer.
+Common base clas of form components, which is "Control", was learned from C# Corner [4] and it was confirmed while searching in class files.
+"String.IsNullOrWhiteSpace" was learned from Stack Overflow [5] and it was used for checking input text.
+From an online video in YouTube [6], setting "UseSystemPasswordChar" variable to "true", method was found for hiding password but it did not work and its reason which is using with "Multiline" feature, was found in Stack Overflow [7].
+Another method for hiding password which is changing "PasswordChar" variable , was found in YouTube [8] and black circle symbol which was found in Alt-Codes [9], was used with hiding method.
+To disable focusing on textbox after clicking ahother place, "ActiveControl" variable was set to null in form event by benefiting an answer in Stack Overflow [10].
+Usage of "MouseClick" event, was changed to "MouseDown" event implementation for clearing focusing.
+After completing a research, it was learned that border color of text box cannot be changed and it was observed that online developers create colorful rectangulars to change border color of text boxes.
+A drawing method of rectangular, was learned on YouTube [11] but it did not worked firstly.
+A method for drawing rectengular, which is overriding "OnPaint" function, was found in Stack Overflow [12].
+Any painting method could not be used for text box and it was learned that "TextBox" class does not support painting member, in Stack Overflow [13].
+While overriding "OnPaint" method in form class, it was realized that "base" keyword of C#, is similar to "Super" keyword of Unreal Engine.
+After examining previous online video tutorial [11], it was realized that "Paint" event of form can be utilized for drawing rectangle and any difference between overriding "OnPaint" and adding an event handler to "Paint" event, could not be found.
+Method of overriding "OnPaint", was used.
+"RGB( 0, 51, 102)" color was found in Color Combos [14] and it was used for changing text box border color.
+Default border style of text boxes, was set as borderless.
+[1] KV Prajapati, boop_the_snoot, https://stackoverflow.com/questions/8721532/why-cant-i-alter-the-height-of-a-textbox-control-in-the-windows-forms-design-vi, 4 January 2012 03:17 (answered), 4 October 2017 06:14 (edited).
+[2] Jon B, https://stackoverflow.com/questions/13529563/c-sharp-set-fontsize-of-textbox, 23 November 2012 12:54.
+[3] C# Ui Academy, https://youtu.be/VFeYyC_4It0, 5 March 2017.
+[4] Samir Bhogayta, https://www.c-sharpcorner.com/interview-question/what-is-the-base-class-of-button-control-in-net, 25 June 2016
+[5] Dor Lugasi-Gal, https://stackoverflow.com/questions/50194050/add-placeholder-to-textbox-control-for-password-c-sharp-winforms, 7 May 2018 13:52.
+[6] Wiki Developers Group, https://youtu.be/bXIP4uoy_FA, 1 January 2018.
+[7] Colin Mackay, https://stackoverflow.com/questions/1113405/password-character-not-working-on-system-windows-forms-textbox, 11 July 2009 10:26.
+[8] Scratch Code, https://youtu.be/iD17cWr10Js, 27 April 2020.
+[9] https://www.alt-codes.net/circle-symbols
+[10] FTheGodfather, Tzah Mama, nhttps://stackoverflow.com/questions/1140250/how-to-remove-the-focus-from-a-textbox-in-winforms, 25 June 2014 19:59 (answered), 29 June 2014 9:06 (edited).
+[11] Nelson Darwin Pak Tech https://youtu.be/gUXY_9SM0Lc, 25 January 2022.
+[12] Matthew Layton, https://stackoverflow.com/questions/26201289/system-drawing-graphics-drawrectangle-draws-rectangle-1px-bigger-than-specified, 5 October 2014 09:25.
+[13] René Vogt, https://stackoverflow.com/questions/37944323/textbox-onpaint-method-is-not-called, 13 June 2019 11:33.
+[14] ColorCombos, https://www.colorcombos.com/colors/003366.

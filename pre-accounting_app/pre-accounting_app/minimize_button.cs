@@ -7,10 +7,10 @@ namespace pre_accounting_app {
     internal class minimize_button : Button {
         int blue = 0;
         int limit_reducer = 0;
-        int transition_value = 17 * 4; // 17 is a divisor of 255.
+        int transition_value = 17 * 5; // 17 is a divisor of 255.
         Bitmap bitmap_minimize_symbol;
         internal minimize_button(close_button close_button) { // Constructor
-            float scale = 0.7f;
+            float scale = 0.75f;
             Width = close_button.Height;
             Height = Width;
             Location = new Point(close_button.Location.X - Width - close_button.gap, close_button.Location.Y);
