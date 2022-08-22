@@ -24,7 +24,7 @@ By benefiting a webpage [16] of Stack Overflow, adding new line features of Visu
 After learning meaning of "0 references" phrase on text editor of Visual Studio from a webpage [17], it was enabled by accomplishing instructions of an answer on a webpage [18].
 Created database was exported by utilizing instructions of an online video tutorial [19].
 After moving a copy of Visual Studio project file to local GitHub repository,  a ".gitignore" file which was copied from a test repository which ignores redundant Visual Studio files, was added.
-Suitability using of multiple "a/an" determiners with "and" conjuction was searched and it was found as correct in a grammar webpage [20]
+Suitability using of multiple "a/an" determiners with "and" conjuction was searched and it was found as correct in ThoughtCo [20].
 [1] https://youtu.be/QsXWszvjMBM2
 [2] https://www.parasut.com/blog/on-muhasebe-ile-genel-muhasebe-arasindaki-farklar
 [3] https://bizimhesap.com/blog-detay/on-muhasebe-ile-genel-muhasebe-arasindaki-farklar-nelerdir

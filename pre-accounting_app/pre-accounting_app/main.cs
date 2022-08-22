@@ -3,8 +3,8 @@
 namespace pre_accounting_app {
     internal class main {
         static void Main(string[] args) {
-            login_form login_form = new login_form();
-            Application.Run(login_form);
+            form_login form_login = new form_login();
+            Application.Run(form_login);
         }
     }
 }

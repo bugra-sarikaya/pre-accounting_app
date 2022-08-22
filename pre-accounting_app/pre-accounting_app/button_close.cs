@@ -3,13 +3,13 @@ using System.Drawing;
 using System.Windows.Forms;
 
 namespace pre_accounting_app {
-    internal class close_button : Button {
+    internal class button_close : Button {
         int red = 0;
         int limit_reducer = 0;
         int transition_value = 17 * 5; // 17 is a divisor of 255.
         internal int gap;
         Bitmap bitmap_close_symbol;
-        internal close_button(top_panel top_panel) { // Constructor.
+        internal button_close(panel_top top_panel) { // Constructor.
             float scale = 0.75f;
             Width = (int)(top_panel.Height * scale);
             Height = Width;
@@ -17,8 +17,7 @@ namespace pre_accounting_app {
             Location = new Point(top_panel.Width - Width - gap, gap);
             string address_close_symbol = "pictures\\close_symbol.png";
             Image close_symbol = Image.FromFile(address_close_symbol);
-            Size image_size = new Size((int)(Width * scale), (int)(Height * scale));
-            bitmap_close_symbol = new Bitmap(close_symbol, image_size);
+            bitmap_close_symbol = new Bitmap(close_symbol, new Size((int)(Width * scale), (int)(Height * scale)));
             Image = bitmap_close_symbol;
             FlatStyle = FlatStyle.Flat;
             FlatAppearance.BorderSize = 0;
@@ -31,7 +30,7 @@ namespace pre_accounting_app {
             MouseDown += mouse_down_event;
             MouseLeave += mouse_leave_event;
         }
-        private bool mouse_is_over_button(close_button button) { // Detecting situation of hovering mouse cursor over button.
+        private bool mouse_is_over_button(button_close button) { // Detecting situation of hovering mouse cursor over button.
             return button.ClientRectangle.Contains(button.PointToClient(Cursor.Position));
         }
         private void timer_event(object sender, EventArgs e) { // Enabling hovering mouse cursor effect smoothly.
@@ -59,7 +58,7 @@ namespace pre_accounting_app {
         private void mouse_leave_event(object sender, EventArgs e) { // Disabling pressing button effect.
             limit_reducer = 0;
         }
-        internal Bitmap change_red_color(Bitmap bitmap_image, int red) { // Changing red color value of image.
+        private Bitmap change_red_color(Bitmap bitmap_image, int red) { // Changing red color value of image.
             Color color_pixel;
             for (int i = 0; i < bitmap_image.Width; i++) {
                 for (int j = 0; j < bitmap_image.Height; j++) {

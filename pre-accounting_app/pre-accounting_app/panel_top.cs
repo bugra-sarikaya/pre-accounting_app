@@ -2,14 +2,14 @@
 using System.Windows.Forms;
 
 namespace pre_accounting_app {
-    public class top_panel : Panel {
+    public class panel_top : Panel {
         Point mouse_location_first, mouse_location_last;
-        internal top_panel(Form form) { // Constructor.
+        internal panel_top(Form form) { // Constructor.
             Width = form.Width;
             Height = 30;
-            close_button close_button = new close_button(this);
-            Controls.Add(close_button);
-            Controls.Add(new minimize_button(close_button));
+            button_close button_close = new button_close(this);
+            Controls.Add(button_close);
+            Controls.Add(new button_minimize(button_close));
             MouseDown += mouse_down_event;
             MouseMove += new MouseEventHandler((sender, e) => mouse_move_event(sender, e, form));
         }

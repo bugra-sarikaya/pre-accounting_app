@@ -1,0 +1,11 @@
+Input text boxes border color effect was set to change to turn white.
+"minimize_button", "close_buttton", "top_panel" and "login_form" classes were renamed as "button_minimize", "button_close", "panel_top" and "login_form".
+New comments were added.
+A button class whose name is "button_submit" name, was created.
+On Stack Overflow [1], it was learned that "ForeColor" property can be used for coloring text of button like also coloring text of text box.
+A square button image was drawn in Aseprite but it was witnessed that image is disrupted after resizing because of breaking equality of width and height.
+Changing pixel locations of image and using a button texture pack, methods were tried to minimizing quality loss but they were canceled because solving their complexity, took too much time.
+A default button design was used to create submit button.
+Form height was readjusted according to submit button location.
+It was decided to decrease usage of custom form components because it is reducing speed.
+[1] Ricardo Fercher, https://stackoverflow.com/questions/38262672/change-button-text-color, 22 February 2017 13:37.

@@ -4,20 +4,19 @@ using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.TextBox;
 
 namespace pre_accounting_app {
-    internal class minimize_button : Button {
+    internal class button_minimize : Button {
         int blue = 0;
         int limit_reducer = 0;
         int transition_value = 17 * 5; // 17 is a divisor of 255.
         Bitmap bitmap_minimize_symbol;
-        internal minimize_button(close_button close_button) { // Constructor
+        internal button_minimize(button_close button_close) { // Constructor
             float scale = 0.75f;
-            Width = close_button.Height;
+            Width = button_close.Height;
             Height = Width;
-            Location = new Point(close_button.Location.X - Width - close_button.gap, close_button.Location.Y);
+            Location = new Point(button_close.Location.X - Width - button_close.gap, button_close.Location.Y);
             string address_minimize_symbol = "pictures\\minimize_symbol.png";
             Image minimize_symbol = Image.FromFile(address_minimize_symbol);
-            Size image_size = new Size((int)(Width * scale), (int)(Height * scale));
-            bitmap_minimize_symbol = new Bitmap(minimize_symbol, image_size);
+            bitmap_minimize_symbol = new Bitmap(minimize_symbol, new Size((int)(Width * scale), (int)(Height * scale)));
             Image = bitmap_minimize_symbol;
             FlatStyle = FlatStyle.Flat;
             FlatAppearance.BorderSize = 0;
@@ -30,7 +29,7 @@ namespace pre_accounting_app {
             MouseDown += mouse_down_event;
             MouseLeave += mouse_leave_event;
         }
-        private bool mouse_is_over_button(minimize_button button) { // Detecting situation of hovering mouse cursor over button.
+        private bool mouse_is_over_button(button_minimize button) { // Detecting situation of hovering mouse cursor over button.
             return button.ClientRectangle.Contains(button.PointToClient(Cursor.Position));
         }
         private void timer_event(object sender, EventArgs e) { // Enabling hovering mouse cursor effect smoothly.
@@ -57,7 +56,7 @@ namespace pre_accounting_app {
         private void mouse_leave_event(object sender, EventArgs e) { //Disabling pressing button effect.
             limit_reducer = 0;
         }
-        internal Bitmap change_blue_color(Bitmap bitmap_image, int blue) { // Changing blue color value of image.
+        private Bitmap change_blue_color(Bitmap bitmap_image, int blue) { // Changing blue color value of image.
             Color color_pixel;
             for (int i = 0; i < bitmap_image.Width; i++) {
                 for (int j = 0; j < bitmap_image.Height; j++) {
