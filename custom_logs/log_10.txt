@@ -1,0 +1,16 @@
+An accounting program was examined on YouTube [1].
+A form class which is named as "form_main", was created.
+A button class which is names as "button_main", was created.
+For naming a variable which stores button gap value, presences of vertical gap and horizantal gap terms was searched and terms were found in a figure from ResearchGate [2].an
+"Remove" method which removes a control, was found in online source [3].
+Another Visual Studio project was opened and ToolBox window was searched to find any useful control for changing form contents like open a new page without creating a new form.
+While trying to test listed controls in ToolBox window, it was noticed that SplitContainer controls splits the current form by adding two panels into form.
+So instead of cretaing another form or deleting controls in "form_main" form, changing created panels method was thought for opening customers, products and reports menus.
+"panel_main" form was created and main buttons which will change panels, were added into this panel.
+Removing main panel process could not be implemented in main button and for trying to solve this, "ControlRemoved" event of main form, was utilized by benefiting an online document of Microsoft [4].
+A created method of main form, was called in click event handler of main button class.
+New comments were added.
+[1] YSM Cloud & PİR Cloud, https://youtu.be/2-uAv-VhHWo, 24 April 2019.
+[2] Naomi G. Rotter, https://www.researchgate.net/figure/Horizontal-and-Vertical-Gap-between-Train-and-High-Level-Platform_fig1_265198408.
+[3] https://www.codegrepper.com/code-examples/csharp/how+to+remove+all+controls+from+panel+c%23
+[4] https://docs.microsoft.com/tr-tr/dotnet/api/system.windows.forms.control.controlremoved?view=windowsdesktop-6.0

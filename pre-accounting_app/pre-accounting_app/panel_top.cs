@@ -3,10 +3,11 @@ using System.Windows.Forms;
 
 namespace pre_accounting_app {
     public class panel_top : Panel {
+        internal static int height = 30;
         Point mouse_location_first, mouse_location_last;
         internal panel_top(Form form) { // Constructor.
             Width = form.Width;
-            Height = 30;
+            Height = height;
             button_close button_close = new button_close(this);
             Controls.Add(button_close);
             Controls.Add(new button_minimize(button_close));
