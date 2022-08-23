@@ -10,13 +10,13 @@ namespace pre_accounting_app {
             button_close button_close = new button_close(this);
             Controls.Add(button_close);
             Controls.Add(new button_minimize(button_close));
-            MouseDown += mouse_down_event;
-            MouseMove += new MouseEventHandler((sender, e) => mouse_move_event(sender, e, form));
+            MouseDown += event_handler_mouse_down;
+            MouseMove += new MouseEventHandler((sender, e) => event_handler_mouse_move(sender, e, form));
         }
-        private void mouse_down_event(object sender, MouseEventArgs e) { // Detecting mouse cursor location when left mouse button is pressed.
+        private void event_handler_mouse_down(object sender, MouseEventArgs e) { // Detecting mouse cursor location when left mouse button is pressed.
             if (e.Button == MouseButtons.Left) mouse_location_first = new Point(-e.X, -e.Y);
         }
-        private void mouse_move_event(object sender, MouseEventArgs e, Form form) { // Moving the form according to mouse cursor location.
+        private void event_handler_mouse_move(object sender, MouseEventArgs e, Form form) { // Moving the form according to mouse cursor location.
             if (e.Button == MouseButtons.Left) {
                 mouse_location_last = Control.MousePosition;
                 mouse_location_last.Offset(mouse_location_first.X, mouse_location_first.Y);

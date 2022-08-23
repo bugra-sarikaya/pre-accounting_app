@@ -14,17 +14,17 @@ namespace pre_accounting_app {
             Text = this.placeholder_text = placeholder_text;
             ForeColor = Color.Silver;
             BorderStyle = BorderStyle.None;
-            Enter += enter_text_event;
-            Leave += leave_text_event;
+            Enter += event_handler_enter_text;
+            Leave += event_handler_leave_text;
         }
-        private void enter_text_event(object sender, EventArgs e) { // Enabling focusing effects.
+        private void event_handler_enter_text(object sender, EventArgs e) { // Enabling focusing effects.
             if (!String.IsNullOrWhiteSpace(Text) && ForeColor != Color.Black) {
                 Text = "";
                 if (placeholder_text == "Password") PasswordChar = '●';
                 ForeColor = Color.Black;
             }
         }
-        private void leave_text_event(object sender, EventArgs e) { // Disabling focusing effects.
+        private void event_handler_leave_text(object sender, EventArgs e) { // Disabling focusing effects.
             if (String.IsNullOrWhiteSpace(Text)) {
                 ForeColor = Color.Silver;
                 if (placeholder_text == "Password") PasswordChar = '\0';

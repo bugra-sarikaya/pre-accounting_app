@@ -25,15 +25,15 @@ namespace pre_accounting_app {
             FlatAppearance.MouseDownBackColor = Color.Transparent;
             Timer timer = new Timer();
             timer.Enabled = true;
-            timer.Tick += timer_event;
-            MouseClick += mouse_clicked_event;
-            MouseDown += mouse_down_event;
-            MouseLeave += mouse_leave_event;
+            timer.Tick += event_handler_timer;
+            MouseClick += event_handler_mouse_clicked;
+            MouseDown += event_handler_mouse_down;
+            MouseLeave += event_handler_mouse_leave;
         }
         private bool mouse_is_over_button(button_close button) { // Detecting situation of hovering mouse cursor over button.
             return button.ClientRectangle.Contains(button.PointToClient(Cursor.Position));
         }
-        private void timer_event(object sender, EventArgs e) { // Enabling hovering mouse cursor effect smoothly.
+        private void event_handler_timer(object sender, EventArgs e) { // Enabling hovering mouse cursor effect smoothly.
             if (mouse_is_over_button(this) && red <= 255 - transition_value - limit_reducer) {
                 red += transition_value;
                 Image = change_red_color(bitmap_close_symbol, red);
@@ -45,17 +45,17 @@ namespace pre_accounting_app {
                 Refresh();
             }
         }
-        private void mouse_clicked_event(object sender, MouseEventArgs e) { // Closing application if button is clicked with left mouse button.
+        private void event_handler_mouse_clicked(object sender, MouseEventArgs e) { // Closing application if button is clicked with left mouse button.
             if (e.Button == MouseButtons.Left) Application.Exit();
         }
-        private void mouse_down_event(object sender, MouseEventArgs e) { // Enabling pressing button effect.
+        private void event_handler_mouse_down(object sender, MouseEventArgs e) { // Enabling pressing button effect.
             if (mouse_is_over_button(this) && e.Button == MouseButtons.Left) {
                 Image = change_red_color(bitmap_close_symbol, red - transition_value);
                 Refresh();
                 limit_reducer = transition_value;
             }
         }
-        private void mouse_leave_event(object sender, EventArgs e) { // Disabling pressing button effect.
+        private void event_handler_mouse_leave(object sender, EventArgs e) { // Disabling pressing button effect.
             limit_reducer = 0;
         }
         private Bitmap change_red_color(Bitmap bitmap_image, int red) { // Changing red color value of image.

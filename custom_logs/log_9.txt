@@ -1,0 +1,21 @@
+"event_handler_" phrases were added beginning of the event handler function names.
+Rewatched an online video tutorial [1] was examined for implementing SQL processes.
+"System.Data.SqlClient" reference was added for using SQL commands.
+While examining another tutorial [2] "System.Data;" reference was added for creating a "DataTable" class object;
+While watching beginning of a watched tutorial [3] for establishing connection to SQL server, Visual Studio wanted to install a SQL Server package.
+"Close" function which was found in Stack Overflow [4] was used for closing login form.
+"static" keyword was used to move inpupt texts to submit button.
+It was noticed that Visual Studio sometimes shows exeption messages in system langauage which is Turkish instead of English and this problem was researched but it could not be fixed.
+"Close" function was used before creating showing a new form but it did not work as expected because program was closed without showing a new form.
+Changing order did not fix previous problem and using "Hide" function method which was found in many online sources, was not chosen for closing form because actually it does not close form.
+Using threads mehtod which was found online video tutorial [5], fixed the problem.
+New comments were added.
+It was noticed that after presing "Enter" on keyboard while typing in input text boxes, written text disappears.
+A method for disabling "Enter" keyboard button, was found in Stak Overflow [6] but instead of that, "AcceptButton" property of form, which was found in a YouTube tutorial [7], was used for calling click event hanlder of submit button. 
+[1] Emir Özdemir, https://youtu.be/wBj04Q4ae_I, 19 January 2021.
+[2] Ehtesham Mehmood, https://www.c-sharpcorner.com/UploadFile/9582c9/login-form-with-sql-in-C-Sharp/,  30 May  2019.
+[3] Emir Özdemir, https://youtu.be/4phTQ7Kf5KI, 2 January 2021.
+[4] https://stackoverflow.com/questions/5548746/c-sharp-open-a-new-form-then-close-the-current-form
+[5] winforms, https://youtu.be/T06aHrAqfRw, 12 November 2014.
+[6] dotNET, https://stackoverflow.com/questions/25700992/do-not-allow-enter-key-to-make-a-new-line-in-multiline-textbox-c-sharp, 6 September 2014 14:13.
+[7] Mucit Yazılım, https://youtu.be/cJY-zPhUwn0, 11 Şub 2022.

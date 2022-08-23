@@ -4,8 +4,8 @@ using System.Windows.Forms;
 
 namespace pre_accounting_app {
     internal class form_login : Form {
+        internal static textbox_input textbox_username, textbox_password;
         Pen pen_textbox_username, pen_textbox_password;
-        textbox_input textbox_username, textbox_password;
         int alpha_username, alpha_password;
         int limit_reducer = 0;
         int transition_value = 17 * 5; // 17 is a divisor of 255.
@@ -44,10 +44,11 @@ namespace pre_accounting_app {
             Controls.Add(button_submit);
             Timer timer = new Timer();
             timer.Enabled = true;
-            timer.Tick += timer_event;
-            MouseDown += mouse_down_event;
+            timer.Tick += event_handler_timer;
+            MouseDown += event_handler_mouse_down;
+            this.AcceptButton = button_submit; 
         }
-        private void mouse_down_event(object sender, MouseEventArgs e) { // Disabling focusing after pressing on form.
+        private void event_handler_mouse_down(object sender, MouseEventArgs e) { // Disabling focusing after pressing on form.
             ActiveControl = null;
         }
         protected override void OnPaint(PaintEventArgs e) { // Drawing rectangle.
@@ -55,7 +56,7 @@ namespace pre_accounting_app {
             e.Graphics.DrawRectangle(pen_textbox_username, new Rectangle(textbox_username.Location.X, textbox_username.Location.Y, textbox_username.Width, textbox_username.Height));
             e.Graphics.DrawRectangle(pen_textbox_password, new Rectangle(textbox_password.Location.X, textbox_password.Location.Y, textbox_password.Width, textbox_password.Height));
         }
-        private void timer_event(object sender, EventArgs e) { // Changing rectangle color smoothly.
+        private void event_handler_timer(object sender, EventArgs e) { // Changing rectangle color smoothly.
             if (textbox_username.Focused) {
                 if (alpha_username <= 255 - transition_value - limit_reducer) {
                     alpha_username += transition_value;
