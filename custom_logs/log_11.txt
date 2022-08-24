@@ -1,0 +1,14 @@
+"panel_customers", "panel_products" and "panel_reports" classes were created.
+A return button class was added to "panel_customers" panel for implementing process of returning to previous panel.
+"Name" properties of panels were assigned with their names which is lower case format.
+For changing panels, an "if - else if" statement was structured in "open_new_panel" method of main form.
+Content of "panel_customers" panel, was copied into "panel_products" and "panel_reports" classes.
+Written event handler method of main form was deleted.
+Name of "panel_reports" class, was changed to "panel_receipts".
+By examining database [1] from preivous internship, a customer table was created.
+After examining a watched tutorial [2], incrementation feature was added to primary key of created table by changing settings of "Identity Specification" property.
+Created table was named as "customers" and other tables from examined database, were created on current server.
+"user_id" column of "users" table, was renamed was "id_user".
+Database with its empty tables, was exported.
+[1] bugrasarikaya, https://gitlab.com/bugrasarikaya/sale_receipt/-/blob/main/receipts_db.sql
+[2] Emir Özdemir, https://youtu.be/pwGhMz8-3gs, 30 August 2020.
