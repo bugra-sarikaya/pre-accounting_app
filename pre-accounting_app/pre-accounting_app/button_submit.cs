@@ -8,7 +8,7 @@ using System.Windows.Forms;
 namespace pre_accounting_app {
     internal class button_submit : Button {
         Thread thread;
-        internal button_submit(int width, int height, int x, int y, String text_submit) { // Constructor.
+        internal button_submit(int width, int height, int x, int y, string text_submit) { // Constructor.
             Width = width;
             Height = height;
             Location = new Point(x, y);
@@ -16,7 +16,6 @@ namespace pre_accounting_app {
             Text = text_submit;
             ForeColor = Color.Black;
             Click += event_handler_click;
-           
         }
         private void event_handler_click(object sender, EventArgs e) { // Checking user information to access next form.
             SqlConnection sql_connection = new SqlConnection("Data Source = DESKTOP-2GM0F2J; Initial Catalog = paa_db; Integrated Security = True ");

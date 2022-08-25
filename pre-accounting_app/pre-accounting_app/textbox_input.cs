@@ -4,8 +4,8 @@ using System.Windows.Forms;
 
 namespace pre_accounting_app {
     internal class textbox_input : TextBox { // Constructor
-        String placeholder_text;
-        internal textbox_input(int width, int height, int x, int y, String placeholder_text) {
+        string placeholder_text;
+        internal textbox_input(int width, int height, int x, int y, string placeholder_text) {
             Width = width;
             Height = height;
             Location = new Point(x, y);
@@ -18,14 +18,14 @@ namespace pre_accounting_app {
             Leave += event_handler_leave_text;
         }
         private void event_handler_enter_text(object sender, EventArgs e) { // Enabling focusing effects.
-            if (!String.IsNullOrWhiteSpace(Text) && ForeColor != Color.Black) {
+            if (!string.IsNullOrWhiteSpace(Text) && ForeColor != Color.Black) {
                 Text = "";
                 if (placeholder_text == "Password") PasswordChar = '●';
                 ForeColor = Color.Black;
             }
         }
         private void event_handler_leave_text(object sender, EventArgs e) { // Disabling focusing effects.
-            if (String.IsNullOrWhiteSpace(Text)) {
+            if (string.IsNullOrWhiteSpace(Text)) {
                 ForeColor = Color.Silver;
                 if (placeholder_text == "Password") PasswordChar = '\0';
                 Text = placeholder_text;

@@ -4,12 +4,14 @@ using System.Windows.Forms;
 
 namespace pre_accounting_app {
     internal class button_return : Button {
-        Panel panel_previous;
-        internal button_return(Panel panel_previous) { // Constructor.
+        form_main form_main;
+        Panel panel_current, panel_next;
+        internal button_return(form_main form_main, Panel panel_current) { // Constructor.
+            this.form_main = form_main;
+            this.panel_current = panel_current;
             int vertical_gap, horizantal_gap;
             vertical_gap = (int)(panel_top.height * 1.2f);
             horizantal_gap = vertical_gap;
-            this.panel_previous = panel_previous;
             Width = 120;
             Height = (int)(Width * 0.33f);
             Location = new Point(panel_top.width - horizantal_gap - Width, panel_top.height + vertical_gap);
@@ -18,7 +20,13 @@ namespace pre_accounting_app {
             Click += event_handler_click;
         }
         private void event_handler_click(object sender, EventArgs e) { // Calling main form method for changing panel.
-            ((form_main)Parent.Parent).open_new_panel((Panel)Parent, panel_previous.Name);
+            if (panel_current.Name == "customers") panel_next = new panel_main(form_main);
+            else if (panel_current.Name == "products") panel_next = new panel_main(form_main);
+            else if (panel_current.Name == "receipts") panel_next = new panel_main(form_main);
+            else if (panel_current.Name == "add_customer") panel_next = new panel_customers(form_main);
+            else if (panel_current.Name == "add_product") panel_next = new panel_products(form_main);
+            else if (panel_current.Name == "add_receipt") panel_next = new panel_receipts(form_main);
+            ((form_main)Parent.Parent).open_new_panel(panel_current, panel_next);
         }
     }
 }

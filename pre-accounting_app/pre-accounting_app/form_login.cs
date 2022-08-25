@@ -46,7 +46,7 @@ namespace pre_accounting_app {
             timer.Enabled = true;
             timer.Tick += event_handler_timer;
             MouseDown += event_handler_mouse_down;
-            this.AcceptButton = button_submit; 
+            AcceptButton = button_submit; 
         }
         private void event_handler_mouse_down(object sender, MouseEventArgs e) { // Disabling focusing after pressing on form.
             ActiveControl = null;

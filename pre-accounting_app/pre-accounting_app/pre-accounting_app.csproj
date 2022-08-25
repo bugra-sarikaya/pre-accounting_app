@@ -39,6 +39,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="button_add.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="button_main.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -61,6 +64,12 @@
     <Compile Include="button_minimize.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="panel_customer_add.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="panel_product_add.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="panel_customers.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -71,6 +80,9 @@
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="panel_receipts.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="panel_receipt_add.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="textbox_input.cs">

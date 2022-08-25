@@ -1,0 +1,31 @@
+A video tutorial from YouTube [1], was watched to learn showing data table on C# form.
+Usage of nested quotation marks, was examined shortly in Grammar Monster [2], for writing next line.
+While trying to creating a new button classes, it was noticed that Visual Studio, suggested changing "String" keyword to "string" keyword, with "IDE049: 'Name can be simplified.'" text.
+Problem was researched shortly and a suggested solution for disabling it, was found in Stack Overflow [3], but after getting failure, this problem was ignored.
+Usages of "string", on C, C++, C# and Java tutorials, were examined and it was decided to use "string" keyword instead of "String".
+Written "String" phrases was changed to "string" phrases in project.
+Structured "if - else if" statement in main form, was moved to click event handler methods of button classes for passing address values of new panels instead of panel names and it caused writing code of calling constructors of new panels in button classes.
+"panel_product_add" class was created for implementing product addition.
+"panel_destination" phrases was renamed as "panel_next".
+Usages of "Parent" keyword, were minimized and method of passed address value, was preferred becuase it was thought that process of using passed address value, is faster than process of "Parent" keyword.
+It was witnessed that a bug causes blocking the returning main panel from product addition panel by using return buttons.
+Unnecessary memory usage whose reason is using "new" keyword on every changement of panel, was detected and also it was noticed on "Process Memory (MB)" section of "Diagnostic Tools" window.
+"delete" keyword could not be found and method of assinging "null" value, was found in Delft Stack [4] and it was used for deleting allocated and unused panel object but this method did not work for decreasing memory usage and problem was delayed.
+It was noticed that method of assigning "null" value, gave a warning with "IDE0059: Unncessary assignment of a value to 'panel_current'" text.
+Preivous warning of "IDE0059" code, was researched but then it was canceled because any solution could not be found in a short time.
+Usage of "nevertheless" word, was examined in PristineWord [5] for writing next sentence.
+Nevertheless, previous warning was tried to be solved and it was observed that adding "ref" keyword to beginning of parameter, cleared the warning.
+Using "ref" keywords or "Dispose" function which is found in Stack Overflow [6], did not solve the unnecessary memory usage.
+It was witnessed that after increasing memory usage to 40 MB by changing panels, memory usage decreased to 18 MB immediately on "Diagnostic Tools" window of Visual Studio and 18 MB was equal to the decreased memory value by used "GC.Collect" method which was found in Stack Overflow [7].
+Reason of previous event was thought as an action of Garbage Collection and the memory usage problem was ignored.
+"ref" keyword implementations which are methods of pass by reference, was removed with deleting objects attempts.
+Multiple selection keyboard shortcut which is "Ctrl + Alt", was learned in Stack Overflow [8].
+Adding product panel was nearly completed.
+[1] CodAffection, https://youtu.be/C9s0H6yeFLQ, 15 Tem 2017 July.
+[2] Craig Shrives, https://www.grammar-monster.com/lessons/quotation_%28speech%29_marks_single_or_double.htm.
+[3] ono2012, https://stackoverflow.com/questions/32187486/why-is-string-considered-a-simplified-version-of-string, 1 November 2019 15:58.
+[4] https://www.delftstack.com/howto/csharp/delete-object-in-csharp/, 27 March 2021.
+[5] https://www.pristineword.com/comma-however-nevertheless-though/, 8 September 2021.
+[6] MarkO, Neel, https://stackoverflow.com/questions/25764965/destroy-an-object-in-c-sharp, 10 September 2014 12:07 (answered), 10 October 2014 4:22 (edited).
+[7] Joel Coehoorn, https://stackoverflow.com/questions/1987251/manually-destroy-c-sharp-objects, 21 Jun  2019 15:21.
+[8] iCould7, https://stackoverflow.com/questions/42837208/how-to-edit-multiple-lines-in-visual-studio-2017-at-once, 23 November 2019 10:03.

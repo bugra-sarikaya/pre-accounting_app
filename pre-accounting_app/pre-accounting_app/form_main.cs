@@ -10,16 +10,21 @@ namespace pre_accounting_app {
             Height = 700;
             StartPosition = FormStartPosition.CenterScreen;
             FormBorderStyle = FormBorderStyle.None;
-            panel_main = new panel_main(this);
-            Controls.Add(new panel_top(this));
+            form_main form_main = this;
+            panel_main = new panel_main(form_main);
+            Controls.Add(new panel_top((Form)form_main));
             Controls.Add(panel_main);
+            MouseDown += event_handler_mouse_down;
         }
-        internal void open_new_panel(Panel panel_current, String name_panel_destination) { // Changing panels.
+        private void event_handler_mouse_down(object sender, MouseEventArgs e) { // Disabling focusing after pressing on form.
+            ActiveControl = null;
+        }
+        internal void assign_button_submit(Button button_submit) { // Setting passed button as accept button.
+            AcceptButton = button_submit;
+        }
+        internal void open_new_panel(Panel panel_current, Panel panel_new) { // Changing panels.
             Controls.Remove(panel_current);
-            if (name_panel_destination == "main") Controls.Add(new panel_main(this));
-            else if (name_panel_destination == "customers") Controls.Add(new panel_customers(this, panel_current));
-            else if (name_panel_destination == "products") Controls.Add(new panel_products(this, panel_current));
-            else if (name_panel_destination == "receipts") Controls.Add(new panel_receipts(this, panel_current));
+            Controls.Add(panel_new);
         }
     }
 }
