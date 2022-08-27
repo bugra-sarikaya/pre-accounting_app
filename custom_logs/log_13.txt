@@ -1,0 +1,22 @@
+It was noticed that, main form is not clickable if a panel is opened because clearing focused component method of main form was not being actived.
+To solve previous problem, clearing event handler method of mainf form was called in an event handler of panel class.
+Structure of past continous passive tense, was examined in a grammer webpage [1] for writing first line.
+It was learned that C# .Net does not have "friend" keyword, from Tutorialspoint [2].
+A "static" keyword usage in login form, was removed because it was thought that passing form object as parameter to access form members, is more elegant.
+Name of "button_submit", was changed to "button_submit_login" and a new submit button class whose name is "button_submit_product_add", was created.
+By benefiting a written GitLab repository code [3] and an online video tutorial [4], an SQL command was written in new button class for inserting new row to table.
+While testing code of new button class, an exception with "System.Data.SqlClient.SqlException: 'Invalid column name 'test'.'" text, occured and to solve this name input type was converted to "char" from "string" by benefiting an answer from Stack Overflow [5].
+Another exception with "System.Data.SqlClient.SqlException: 'An object or column name is missing or empty..." description, occured while testing and to solve this, indicating values method was changed by benefiting a tutorial video [6].
+For converting "string" type to "float" type, "float.Parse" function was found in Stack Overflow [7] and it was used but it was observed that result number in table, was too long.
+Reason of previous exception, which is missing single quotes, was learned on an online video [8] from YouTube. 
+Another exception with "System.Data.SqlClient.SqlException: 'Error converting data type varchar to float.'" text, occured and to solve this, point of input text, was replaced with comma by "Replace" method which was found in a webpage of İmza Bilgi Teknolojileri [9].
+After insertion, a message box was showed to notify user and click event handler method of return button was called for returning previous panel.
+[1] https://learningenglish.voanews.com/a/am-i-being-watched-the-continuous-passive-/4529468.html
+[2] Arjun Thakur, https://www.tutorialspoint.com/what-is-the-chash-equivalent-of-cplusplus-friend-keyword, 22 June 2020 12:53:12.
+[3] bugrasarikaya, https://gitlab.com/bugrasarikaya/sale_receipt/-/blob/main/checkout_server.php.
+[4] Emir Özdemir, https://youtu.be/4phTQ7Kf5KI, 2 January 2021.
+[5] Junaid Pathan, https://stackoverflow.com/questions/33946594/c-sharp-how-to-convert-string-to-char, 1 January 2019 16:37.
+[6] Swift Learn, https://youtu.be/aer8S1fFbNc, 9 February 2019.
+[7] cederlof, https://stackoverflow.com/questions/20286190/convert-a-string-to-float, 29 November 2013 13:20.
+[8] Vis Dotnet, https://youtu.be/LWf6JDTV4j8, 14 December 2017.
+[9] https://www.imzabt.com.tr/blog/error-converting-data-type-varchar-to-float-hatasi-ve-cozumu-51.html

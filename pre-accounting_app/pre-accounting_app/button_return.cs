@@ -19,7 +19,7 @@ namespace pre_accounting_app {
             Font = new Font(Font.FontFamily, (int)(Height * 0.4f));
             Click += event_handler_click;
         }
-        private void event_handler_click(object sender, EventArgs e) { // Calling main form method for changing panel.
+        internal void event_handler_click(object sender, EventArgs e) { // Calling main form method for changing panel.
             if (panel_current.Name == "customers") panel_next = new panel_main(form_main);
             else if (panel_current.Name == "products") panel_next = new panel_main(form_main);
             else if (panel_current.Name == "receipts") panel_next = new panel_main(form_main);

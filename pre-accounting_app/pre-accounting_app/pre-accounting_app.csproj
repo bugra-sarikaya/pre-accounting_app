@@ -48,10 +48,13 @@
     <Compile Include="button_return.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="button_submit.cs">
+    <Compile Include="button_submit_login.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="button_close.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="button_submit_product_add.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="form_login.cs">

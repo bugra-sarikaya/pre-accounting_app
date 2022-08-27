@@ -4,7 +4,7 @@ using System.Windows.Forms;
 
 namespace pre_accounting_app {
     internal class form_login : Form {
-        internal static textbox_input textbox_username, textbox_password;
+        internal textbox_input textbox_username, textbox_password;
         Pen pen_textbox_username, pen_textbox_password;
         int alpha_username, alpha_password;
         int limit_reducer = 0;
@@ -35,7 +35,7 @@ namespace pre_accounting_app {
             textbox_password = new textbox_input(textbox_username.Width, textbox_username.Height, textbox_username.Location.X, textbox_username.Location.Y + textbox_username.Height + third_gap, "Password");
             pen_textbox_username = new Pen(Color.FromArgb(alpha_username, 255, 0, 0), width_pen);
             pen_textbox_password = new Pen(Color.FromArgb(alpha_password, 255, 0, 0), width_pen);
-            button_submit button_submit = new button_submit((int)(textbox_password.Width * 0.7f), (int)(logo_box.Height * 0.8f), (Width - (int)(textbox_password.Width * 0.7f)) / 2, textbox_password.Location.Y + textbox_password.Height + fourth_gap, "Login");
+            button_submit_login button_submit = new button_submit_login((int)(textbox_password.Width * 0.7f), (int)(logo_box.Height * 0.8f), (Width - (int)(textbox_password.Width * 0.7f)) / 2, textbox_password.Location.Y + textbox_password.Height + fourth_gap, "Login", this);
             Height = button_submit.Location.Y + button_submit.Height + initial_gap;
             Controls.Add(new panel_top(this));
             Controls.Add(logo_box);

@@ -16,7 +16,7 @@ namespace pre_accounting_app {
             Controls.Add(panel_main);
             MouseDown += event_handler_mouse_down;
         }
-        private void event_handler_mouse_down(object sender, MouseEventArgs e) { // Disabling focusing after pressing on form.
+        internal void event_handler_mouse_down(object sender, MouseEventArgs e) { // Disabling focusing after pressing on form.
             ActiveControl = null;
         }
         internal void assign_button_submit(Button button_submit) { // Setting passed button as accept button.

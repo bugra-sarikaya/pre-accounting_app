@@ -6,9 +6,11 @@ using System.Threading;
 using System.Windows.Forms;
 
 namespace pre_accounting_app {
-    internal class button_submit : Button {
+    internal class button_submit_login : Button {
         Thread thread;
-        internal button_submit(int width, int height, int x, int y, string text_submit) { // Constructor.
+        form_login form_login;
+        internal button_submit_login(int width, int height, int x, int y, string text_submit, form_login form_login) { // Constructor.
+            this.form_login = form_login;
             Width = width;
             Height = height;
             Location = new Point(x, y);
