@@ -1,0 +1,34 @@
+"code_product" column was inserted to "product" table.
+"button_submit_product_add" class was updated by adding text box of product code.
+"ComboBox" component was preferred for selecting product and code of creating "ComboBox" class, was examined shortly in a document of Microsoft [1].
+It was learned that "code" word has no plural form for programming terminology, in Stack Exchange [2] and it was used for writing previous sentence correctly.
+12 products which was found previous internship project file [3], was inserted into products table on SSMS.
+An selecting SQL command was written and method of accessing data table cell, was learned in Stack Overflow [4] for showing product codes in "ComboBox".
+Thanks to "ToArray" method which was found in Stack Overflow [5], result cells of previous SQL command, were inserted into "ComboBox" class.
+Coding autocomplete feature of "ComboBox" class, was delayed.
+While trying to test a found code, "using static System.Windows.Forms.VisualStyles.VisualStyleElement;" line was automatically written by Visual Studio and this code caused errors but any solution to disable automatic writing reference feature, could not be found.
+Method of accessing selected item after closing drop-down list, which is utilizing "DropDownClosed" event and "SelectedItem" property, was learned on Stack Overflow [6].
+Writing "drop-down list" phrase, was examined in Wikipedia [7] for correcting previous sentence.
+Creating a "DataView" class was tried to show products but after realizing that "DataView" class does not have a "Size" property, class type was changed to "DataGridView".
+For calling a main form method which has a "MouseEventArgs" paramater, "EventArgs" argument was changed to "MouseEventArgs" argument by using type conversion in "DropDownClosed" event handler method but it gave an error whose name is "System.InvalidCastException".
+It was learned that type conversion is also known as type casting, in Tutorialspoint [8].
+In "DropDownClosed" event handler method of created "ComboBox" class, unfocusing method could not called because any solution for problem of convering "EventArgs" argument to "MouseEventArgs" argument, could not be found.
+Instead of calling in "DropDownClosed" method, unfocusing method was called in click event handler of "TabPage" class by copying previously written click event handler method.
+It was noticed that the type conversion had been implemented perfectly in written click event handler method, although it could not be implemented in "DropDownClosed" event handler.
+Usages of "although" phrase with comma, were examined shortly in PristineWord [9] for writing previous sentence.
+Unfocusing method was also called in panel classes.
+Double tab feature was closed by unchecking "Tab twice to insert argumets (experimetinal)" option in IntelliSense settings for disabling "if - else" preprocessor directives writing after pressing "Tab" button twice.
+"DataSource" property of "DataGridWiew", which was found in Kodlama Merkezi [10], was used to fill table with SQL command result.
+For compressing columns, usable "AutoSizeColumnsMode" property was found in Stack Overflow and its usage was examined in a document of Microsoft [12].
+[1] https://docs.microsoft.com/tr-tr/dotnet/api/system.windows.forms.combobox.dropdown?view=windowsdesktop-6.0
+[2] https://ell.stackexchange.com/questions/258852/a-single-line-of-code-or-codes
+[3] bugrasarikaya, https://gitlab.com/bugrasarikaya/sale_receipt/-/blob/main/receipts_db.sql.
+[4] FrenkyB, Soner Gönül, https://stackoverflow.com/questions/9022118/access-cell-value-of-datatable, 5 December 2013 18:37 (answered), 8 January 2016 14:50 (edited).
+[5] Randolpho, https://stackoverflow.com/questions/782096/convert-listt-to-object, 24 July 2017 22:13.
+[6] Юрий Коновалов, https://stackoverflow.com/questions/16966264/what-event-handler-to-use-for-combobox-item-selected-selected-item-not-necessar, 13 January 2021 23:37.
+[7] https://en.wikipedia.org/wiki/Drop-down_list
+[8] https://www.tutorialspoint.com/csharp/csharp_type_conversion.htm
+[9] https://www.pristineword.com/comma-although/
+[10] https://www.kodlamamerkezi.com/c-net/c-ile-veritabanindaki-kayitlari-datagridview-icerisinde-gosterme/
+[11] ChrisF♦, https://stackoverflow.com/questions/4194130/c-sharp-resize-datagridview-columns-to-fit-control, 16 November 2010 12:38.
+[12] https://docs.microsoft.com/tr-tr/dotnet/api/system.windows.forms.datagridview.autosizecolumnsmode?view=windowsdesktop-6.0

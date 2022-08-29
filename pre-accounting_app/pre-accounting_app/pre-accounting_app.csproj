@@ -63,6 +63,12 @@
     <Compile Include="button_submit_receipt_add.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="combobox_product.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="datagridview.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="form_login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -101,6 +107,9 @@
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="tabpage_payment.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="tabpage_product.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="textbox_input.cs">

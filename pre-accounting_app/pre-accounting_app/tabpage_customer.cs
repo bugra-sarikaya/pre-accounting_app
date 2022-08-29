@@ -4,14 +4,16 @@ using System.Windows.Forms;
 
 namespace pre_accounting_app {
     internal class tabpage_customer : TabPage {
+        form_main form_main;
         internal tabpage_customer(form_main form_main, TabControl tabcontrol) { // Constructor.
+            this.form_main = form_main;
             textbox_input textbox_input_name, textbox_input_surname, textbox_input_personal_id, textbox_input_tel, textbox_input_email;
             int vertical_gap_0, vertical_gap_1, vertical_gap_2, vertical_gap_3, vertical_gap_4;
             vertical_gap_0 = 100;
             vertical_gap_1 = (int)(vertical_gap_0 * 0.7f);
             vertical_gap_4 = vertical_gap_3 = vertical_gap_2 = vertical_gap_1;
             Width = tabcontrol.Width;
-            Height = tabcontrol.Height;
+            Height = tabcontrol.Height - tabcontrol.ItemSize.Height;
             Text = "Customer";
             textbox_input_name = new textbox_input(200, 30, (Width - 200) / 2, vertical_gap_0, "Name");
             textbox_input_surname = new textbox_input(textbox_input_name.Width, textbox_input_name.Height, textbox_input_name.Location.X, textbox_input_name.Location.Y + vertical_gap_1, "Surname");
@@ -24,6 +26,10 @@ namespace pre_accounting_app {
             Controls.Add(textbox_input_tel);
             Controls.Add(textbox_input_email);
             Controls.Add(new button_next(form_main, tabcontrol));
+            Click += click_event_handler_button;
+        }
+        private void click_event_handler_button(object sender, EventArgs e) {
+            form_main.event_handler_mouse_down(sender, (MouseEventArgs)e);
         }
     }
 }

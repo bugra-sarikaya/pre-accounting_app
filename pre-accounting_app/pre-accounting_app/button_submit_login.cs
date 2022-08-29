@@ -32,8 +32,10 @@ namespace pre_accounting_app {
                 thread = new Thread(open_new_form);
                 thread.SetApartmentState(ApartmentState.STA);
                 thread.Start();
-            } else MessageBox.Show("Access denied.");
-            sql_connection.Close();
+            } else {
+                sql_connection.Close();
+                MessageBox.Show("Access denied.");
+            }
         }
         private void open_new_form(object sender) { // Opening new form.
             Application.Run(new Form());
