@@ -1,0 +1,16 @@
+It was noticed that locations of panels, had not been specified and they were adjusted according to height of top panel.
+Examples of past perfect passive tense, were examined shortly in GrammarBank [1] for writing previous sentence.
+After locating panels, it was observed that locations of main buttons, slipped down.
+"id_personal" colum of "customers" table was renamed as "personal_id".
+In "panel_receipt_add" class, a "TabControl" system was coded by benefiting a webpage of C# Corner [2].
+"TabPage" classes were created according to database tables.
+A next button was created in "TabPage" components of created "TabControl" and selected "TabPage" was changed in its click event handler by incrementing "SelectedIndex" which was found in a documentation [3] of Microsoft.
+An inaccuracy was noticed on location of next button and tags of "TabControl" component was thought as a possible reason.
+For aligning next button for solving the inaccuracy, tag size mode and size properties, were changed by benefiting an answer [4] of Stack Overflow.
+It was observed that program focuses first textbox after clicking next button and to solve this, a previously used method of main form, was used again for clearing active components.
+"TabPage" classes of customer, address and payment pages, were completed but a submit button was created in payment page, instead of next button.
+SQL command of submit button, was not created because a purchased product page, was missing.
+[1] https://www.grammarbank.com/past-perfect-passive.html
+[2] Mahesh Chand, https://www.c-sharpcorner.com/UploadFile/mahesh/C-Sharp-tabcontrol/, 21 May 2020.
+[3] https://docs.microsoft.com/tr-tr/dotnet/api/system.windows.forms.tabcontrol.selectedindex?view=windowsdesktop-6.0
+[4] TaW, https://stackoverflow.com/questions/35155475/change-the-tab-size-of-tabcontrol, 11 Novembver 2017 16:46.

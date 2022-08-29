@@ -11,8 +11,9 @@ namespace pre_accounting_app {
             StartPosition = FormStartPosition.CenterScreen;
             FormBorderStyle = FormBorderStyle.None;
             form_main form_main = this;
-            panel_main = new panel_main(form_main);
-            Controls.Add(new panel_top((Form)form_main));
+            panel_top panel_top = new panel_top(form_main);
+            panel_main = new panel_main(form_main, panel_top);
+            Controls.Add(panel_top);
             Controls.Add(panel_main);
             MouseDown += event_handler_mouse_down;
         }

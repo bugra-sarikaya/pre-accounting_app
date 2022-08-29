@@ -4,19 +4,20 @@ using System.Drawing;
 using System.Windows.Forms;
 
 namespace pre_accounting_app {
-    internal class button_submit_product_add : Button {
+    internal class button_submit_receipt_add : Button{
         button_return button_return;
+        form_main form_main;
+        TabControl tabcontrol;
         textbox_input textbox_input_name, textbox_input_price;
-        internal button_submit_product_add(int width, int height, int x, int y, textbox_input textbox_input_name, textbox_input textbox_input_price, button_return button_return) { // Constructor.
-            this.button_return = button_return;
-            this.textbox_input_name = textbox_input_name;
-            this.textbox_input_price = textbox_input_price;
-            Width = width;
-            Height = height;
-            Location = new Point(x, y);
-            Font = new Font(Font.FontFamily, (int)(Height * 0.25f));
+        internal button_submit_receipt_add(form_main form_main, TabControl tabcontrol) { // Constructor.
+            this.form_main = form_main;
+            this.tabcontrol = tabcontrol;
+            int vertical_gap_0, horizantal_gap_0;
+            vertical_gap_0 = horizantal_gap_0 = 30;
+            Size = new Size(80, 50);
+            Location = new Point(tabcontrol.Width - Width - vertical_gap_0, tabcontrol.Height - Height - horizantal_gap_0 - tabcontrol.ItemSize.Height);
             Text = "Accept";
-            ForeColor = Color.Black;
+            Font = new Font(Font.FontFamily, (int)(Height * 0.25f));
             Click += event_handler_click;
         }
         private void event_handler_click(object sender, EventArgs e) { // Inserting a new row to "product" table.

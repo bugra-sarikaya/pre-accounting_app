@@ -45,6 +45,9 @@
     <Compile Include="button_main.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="button_next.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="button_return.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -55,6 +58,9 @@
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="button_submit_product_add.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="button_submit_receipt_add.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="form_login.cs">
@@ -86,6 +92,15 @@
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="panel_receipt_add.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="tabpage_address.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="tabpage_customer.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="tabpage_payment.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="textbox_input.cs">
