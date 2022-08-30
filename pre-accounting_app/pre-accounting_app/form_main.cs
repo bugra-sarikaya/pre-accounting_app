@@ -7,7 +7,7 @@ namespace pre_accounting_app {
         panel_main panel_main;
         internal form_main() { // Constructor.
             Width = 1000;
-            Height = 700;
+            Height = 800;
             StartPosition = FormStartPosition.CenterScreen;
             FormBorderStyle = FormBorderStyle.None;
             form_main form_main = this;

@@ -1,0 +1,22 @@
+Last empty row of DataGridView, was removed by assigning "false" value to AllowUserToAddRows property which was found in ASPsnippets [1].
+It was decided to minmize using double quotation marks for class or member names because it was noticed that Microsoft had not used them in their online documentation.
+To access cell height of DataGridView, RowTemplate property was learned in Stack Overflow [2] and its Height member was used to narrow DataGridView size.
+NumericUpDown class which was learned in documentation of Microsoft, was created for specifying product count.
+Another add button was created to add product to product list on receipt.
+Some codes from internet, were tested for copying data tables but they gave System.InvalidOperationException error which is about no columns.
+To solve no columns error, columns were added by benefiting a code from Yazılım Bilişim [3].
+An adding row method, which is intalling a temp row, was found Stack Overflow [4] and it was used.
+A simple search method was written to increase product count instead of adding new row of same product.
+Method of creating a DataGridViewTextBoxCell object, which was found in Stack Overflow [5], was used to add cells to a DataGridViewCell object.
+While trying to use type conversion for cell, System.InvalidCastException error occured and to solve, this Convert.ToSingle method, which was found in a forum webpage [6] of Microsoft, was used.
+For solving another type conversion error, Convert.ToInt32 method which was found in Stack Overflow [7], was used to convert decimal value of NumericUpDown to int value.
+Form height was increased.
+A TextBox was added to product panel to show total cost.
+Structure of product TabPage was completed but visual design was not completed.
+[1] Mudassar Khan, https://www.aspsnippets.com/Articles/Remove-Delete-Last-Blank-Empty-Row-from-DataGridView-in-Windows-Forms-WinForms-Application-using-C-and-VBNet.aspx, 24 June 2015.
+[2] https://stackoverflow.com/questions/3370236/changing-the-row-height-of-a-datagridview
+[3] https://www.yazilimbilisim.net/c-sharp/c-datagridview-satir-ve-sutun-ekleme/
+[4] Habib, https://stackoverflow.com/questions/10063770/how-to-add-a-new-row-to-datagridview-programmatically, 20 April 2016 14:11.
+[5] BornToCode, https://stackoverflow.com/questions/1516252/how-to-programmatically-set-cell-value-in-datagridview, 22 October 2012 21:10.
+[6] IanG, https://social.msdn.microsoft.com/Forums/en-US/4b48ac71-2094-42ac-88de-60004048cb11/object-to-float-casting-problem?forum=csharplanguage, 6 July 2006 9:59 AM.
+[7] Mohit S, https://stackoverflow.com/questions/32216708/c-sharp-numericupdown-to-pass-a-value-to-an-integer, 26 August 2015 02:19.

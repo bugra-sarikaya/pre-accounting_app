@@ -7,10 +7,10 @@ using System.Windows.Forms;
 
 namespace pre_accounting_app {
     internal class combobox_product : ComboBox {
-        datagridview datagridview;
+        datagridview_product datagridview_product;
         form_main form_main;
-        internal combobox_product(int width, int height, int x, int y, datagridview datagridview, form_main form_main) {  // Constructor.
-            this.datagridview = datagridview;
+        internal combobox_product(int width, int height, int x, int y, datagridview_product datagridview_product, form_main form_main) {  // Constructor.
+            this.datagridview_product = datagridview_product;
             this.form_main = form_main;
             Size = new Size(width, height);
             Location = new Point(x, y);
@@ -30,7 +30,7 @@ namespace pre_accounting_app {
             DropDownClosed += event_handler_drop_down_closed;
         }
         private void event_handler_drop_down_closed(object sender, EventArgs e) {
-            datagridview.show_product((string)SelectedItem);
+            datagridview_product.show_product((string)SelectedItem);
         }
     }
 }

@@ -1,5 +1,4 @@
-﻿using pre_accounting_app;
-using System;
+﻿using System;
 using System.Drawing;
 using System.Windows.Forms;
 
