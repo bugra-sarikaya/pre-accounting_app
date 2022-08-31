@@ -106,6 +106,9 @@
     <Compile Include="panel_receipt_add.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="tabcontrol.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="tabpage_address.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -115,7 +118,13 @@
     <Compile Include="tabpage_payment.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="tabpage_product.cs">
+    <Compile Include="tabpage_order.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="tabpage_summary.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="textbox.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="textbox_input.cs">

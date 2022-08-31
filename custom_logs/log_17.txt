@@ -1,0 +1,26 @@
+Missing return button was added to receipt addition panel.
+Location and Size properties of return button, were changed.
+Missing Name property of receipt addition panel, was assigned to solve problem of returning receipt panel from receipt addition panel.
+It was witnessed that program deleted receipt information after pressing return button.
+A defect in location of return button was detected in product addition panel and to solve this, unassigned Location property was assigned a value like other location values of return buttons.
+A figure of database table relationsship on Stack Overflow, was examined [1].
+A new TabPage for receipt summary was created.
+"tabpage_product" class was renamed as "tabpage_order".
+Some unnecessary text boxes were deleted.
+TabPages property was learned in Stack Overflow and it was tried to be used to access other TabPage elements of TabControl in summary TabPage.
+Unused parameters of "datagridview_product" class, were removed.
+A custom TabControl class was created for writing special event handler methods.
+TabIndexChanged event did not be fired while testing and to solve, a solution which is changing current event to SelectedIndexChanged event, was found in Stack Overflow [3].
+Any short solution for copying DataGridView, could not be found.
+With "foreach" statement, rows were tried to be copied by passing row value to Add method but program gave System.InvalidOperationException error with "Row provided already belongs to a DataGridView control." text.
+Previous exception was researched and it was found that passing a row which was produced with "foreach" statement, to Add method, is not possible, in Stack Overflow [4].
+It was learned that Copy method does not copy cell values of row, from an online document [4] of Microsoft.
+Before using two nested "for" statement for copying data tables, Clear method was used to erase summary table.
+A bug was detected in comparison section of search method of custom DataGridView class and to solve this Equals method which was found in Stack Overflow, was used to compare string values.
+A new custom TextBox class was created to show total cost with assigned ReadOnly property as "true".
+[1] Duncan Lock, https://stackoverflow.com/questions/17711324/database-structure-for-customer-table-having-many-orders-per-customer-and-many, 30 July 2021 15:30.
+[2] grimmig, https://stackoverflow.com/questions/9477647/searching-for-a-tabpage-in-the-tabcontrol-c-sharp, 28 February 2012 07:10.
+[3] LarsTech, https://stackoverflow.com/questions/7650515/tabcontrol-tabindexchanged-wont-fire, 4 October 2011 16:06.
+[4] Lee Baker, https://stackoverflow.com/questions/9272628/exceptionrow-provided-already-belongs-to-a-datagridview-control, 14 February 2012 06:42.
+[5] https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.datagridviewrow.clone?view=windowsdesktop-6.0
+[6] p.s.w.g, https://stackoverflow.com/questions/21539736/comparison-of-datagridview-cell-values, 3 February 2014 23:18.

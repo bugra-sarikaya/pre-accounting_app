@@ -3,9 +3,9 @@ using System.Drawing;
 using System.Windows.Forms;
 
 namespace pre_accounting_app {
-    internal class textbox_input : TextBox { // Constructor
+    internal class textbox_input : TextBox {
         string placeholder_text;
-        internal textbox_input(int width, int height, int x, int y, string placeholder_text) {
+        internal textbox_input(int width, int height, int x, int y, string placeholder_text) { // Constructor.
             Width = width;
             Height = height;
             Location = new Point(x, y);

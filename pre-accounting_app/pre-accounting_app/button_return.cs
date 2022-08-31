@@ -12,11 +12,11 @@ namespace pre_accounting_app {
             this.panel_current = panel_current;
             this.panel_top = panel_top;
             int vertical_gap, horizantal_gap;
-            vertical_gap = (int)(panel_top.height * 1.2f);
+            vertical_gap = (int)(panel_top.height * 0.6f);
             horizantal_gap = vertical_gap;
-            Width = 120;
+            Width = 80;
             Height = (int)(Width * 0.33f);
-            Location = new Point(panel_top.width - horizantal_gap - Width, panel_top.height + vertical_gap);
+            Location = new Point(panel_top.width - horizantal_gap - Width, vertical_gap);
             Text = "Return";
             Font = new Font(Font.FontFamily, (int)(Height * 0.4f));
             Click += event_handler_click;

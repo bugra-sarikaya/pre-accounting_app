@@ -19,14 +19,14 @@ namespace pre_accounting_app {
             textbox_input_expiry_month = new textbox_input(textbox_input_card_number.Width, textbox_input_card_number.Height, textbox_input_card_number.Location.X, textbox_input_card_number.Location.Y + vertical_gap_2, "Expiry Month");
             textbox_input_expiry_year = new textbox_input(textbox_input_expiry_month.Width, textbox_input_expiry_month.Height, textbox_input_expiry_month.Location.X, textbox_input_expiry_month.Location.Y + vertical_gap_3, "Expiry Year");
             textbox_postal_cvv = new textbox_input(textbox_input_expiry_year.Width, textbox_input_expiry_year.Height, textbox_input_expiry_year.Location.X, textbox_input_expiry_year.Location.Y + vertical_gap_4, "CVV");
-            button_submit_receipt_add button_submit_receipt_add = new button_submit_receipt_add(form_main, tabcontrol);
-            form_main.assign_button_submit(button_submit_receipt_add);
+            //button_submit_receipt_add button_submit_receipt_add = new button_submit_receipt_add(form_main, tabcontrol);
+            //form_main.assign_button_submit(button_submit_receipt_add);
             Controls.Add(textbox_input_name);
             Controls.Add(textbox_input_card_number);
             Controls.Add(textbox_input_expiry_month);
             Controls.Add(textbox_input_expiry_year);
             Controls.Add(textbox_postal_cvv);
-            Controls.Add(button_submit_receipt_add);
+            Controls.Add(new button_next(form_main, tabcontrol));
             Click += click_event_handler_button;
         }
         private void click_event_handler_button(object sender, EventArgs e) {

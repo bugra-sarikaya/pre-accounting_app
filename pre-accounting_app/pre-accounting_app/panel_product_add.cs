@@ -4,6 +4,7 @@ using System.Windows.Forms;
 
 namespace pre_accounting_app {
     internal class panel_product_add : Panel {
+        button_return button_return;
         button_submit_product_add button_submit_product_add;
         form_main form_main;
         textbox_input textbox_input_name, textbox_code_product, textbox_input_price;
@@ -15,11 +16,12 @@ namespace pre_accounting_app {
             vertical_gap_3 = (int)(vertical_gap_2 * 1.5f);
             Width = form_main.Width;
             Height = form_main.Height - panel_top.height;
+            Location = new Point(0, panel_top.Height);
             Name = "add_product";
             textbox_input_name = new textbox_input(200, 30, (Width - 200) / 2, vertical_gap_0, "Name");
             textbox_code_product = new textbox_input(textbox_input_name.Width, textbox_input_name.Height, textbox_input_name.Location.X, textbox_input_name.Location.Y + vertical_gap_1, "Product Code");
             textbox_input_price = new textbox_input(textbox_code_product.Width, textbox_code_product.Height, textbox_code_product.Location.X, textbox_code_product.Location.Y + vertical_gap_2, "Price");
-            button_return button_return = new button_return(form_main, this, panel_top);
+            button_return = new button_return(form_main, this, panel_top);
             button_submit_product_add = new button_submit_product_add(textbox_input_price.Width, textbox_input_price.Height, (Width - textbox_input_price.Width) / 2, textbox_input_price.Location.Y + vertical_gap_3, textbox_input_name, textbox_code_product, textbox_input_price, button_return);
             form_main.assign_button_submit(button_submit_product_add);
             Controls.Add(textbox_input_name);

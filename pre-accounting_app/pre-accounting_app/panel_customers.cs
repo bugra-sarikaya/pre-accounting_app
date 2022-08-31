@@ -9,7 +9,6 @@ namespace pre_accounting_app {
             Location = new Point(0, panel_top.Height);
             Name = "customers";
             Controls.Add(new button_return(form_main, this, panel_top));
-            
         }
     }
 }

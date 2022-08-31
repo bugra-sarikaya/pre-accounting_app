@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Drawing;
-using System.IO;
 using System.Windows.Forms;
 
 namespace pre_accounting_app {
@@ -13,16 +12,9 @@ namespace pre_accounting_app {
             Width = form_main.Width;
             Height = form_main.Height - panel_top.height;
             Location = new Point(0, panel_top.Height);
-            TabControl tabcontrol = new TabControl();
-            tabcontrol.Location = new Point(vertical_gap_0, horizantal_gap_0);
-            tabcontrol.Size = new Size(Width - vertical_gap_0 * 2, Height - horizantal_gap_0 * 2);
-            tabcontrol.SizeMode = TabSizeMode.Fixed;
-            tabcontrol.ItemSize = new Size(60, 30);
-            tabcontrol.TabPages.Add(new tabpage_product(form_main, tabcontrol));
-            tabcontrol.TabPages.Add(new tabpage_customer(form_main, tabcontrol));
-            tabcontrol.TabPages.Add(new tabpage_address(form_main, tabcontrol));
-            tabcontrol.TabPages.Add(new tabpage_payment(form_main, tabcontrol));
-            Controls.Add(tabcontrol);
+            Name = "add_receipt";
+            Controls.Add(new button_return(form_main, this, panel_top));
+            Controls.Add(new tabcontrol(Width - vertical_gap_0 * 2, Height - horizantal_gap_0 * 2, vertical_gap_0, horizantal_gap_0, form_main));
             Click += click_event_handler_button;
         }
         private void click_event_handler_button(object sender, EventArgs e) {

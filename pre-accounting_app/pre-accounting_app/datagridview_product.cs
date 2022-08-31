@@ -6,7 +6,7 @@ using System.Windows.Forms;
 
 namespace pre_accounting_app {
     internal class datagridview_product : DataGridView {
-        internal datagridview_product(int width, int height, int x, int y, form_main form_main, TabControl tabcontrol) { // Constructor.
+        internal datagridview_product(int width, int height, int x, int y) { // Constructor.
             Size = new Size(width, height);
             Location = new Point(x, y);
             AllowUserToAddRows = false;

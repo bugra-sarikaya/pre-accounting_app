@@ -4,11 +4,12 @@ using System.Drawing;
 using System.Windows.Forms;
 
 namespace pre_accounting_app {
-    internal class tabpage_product : TabPage {
+    internal class tabpage_order : TabPage {
+        internal datagridview_product datagridview_product_list;
+        internal textbox textbox_total_cost;
         form_main form_main;
-        internal tabpage_product(form_main form_main, TabControl tabcontrol) { // Constructor.
+        internal tabpage_order(form_main form_main, TabControl tabcontrol) { // Constructor.
             this.form_main = form_main;
-            textbox_input textbox_input_name, textbox_input_surname, textbox_input_personal_id, textbox_input_tel, textbox_input_email;
             int horizantal_gap_0, horizantal_gap_1, horizantal_gap_2, vertical_gap_0, vertical_gap_1, vertical_gap_2, vertical_gap_3, vertical_gap_4;
             int location_x_combobox, location_y_combobox;
             location_y_combobox = horizantal_gap_0 = 50;
@@ -19,14 +20,12 @@ namespace pre_accounting_app {
             vertical_gap_4 = vertical_gap_3 = vertical_gap_2 = vertical_gap_1;
             Width = tabcontrol.Width;
             Height = tabcontrol.Height - tabcontrol.ItemSize.Height;
-            Text = "Product";
-            datagridview_product datagridview_product = new datagridview_product(400, 50, location_x_combobox, location_y_combobox + horizantal_gap_1, form_main, tabcontrol);
+            Text = "Order";
+            datagridview_product datagridview_product = new datagridview_product(400, 50, location_x_combobox, location_y_combobox + horizantal_gap_1);
             combobox_product combobox_product = new combobox_product(100, 30, location_x_combobox, location_y_combobox, datagridview_product, form_main);
             numericupdown numericupdown = new numericupdown(50, 10, combobox_product.Location.X + combobox_product.Width + horizantal_gap_1, combobox_product.Location.Y);
-            datagridview_product datagridview_product_list = new datagridview_product(400, 400, Width - 400 - vertical_gap_0, datagridview_product.Location.Y, form_main, tabcontrol);
-            TextBox textbox_total_cost = new TextBox();
-            textbox_total_cost.Size = new Size(50, 30);
-            textbox_total_cost.Location = new Point(Width - 50 - 10, datagridview_product_list.Location.Y + datagridview_product_list.Height + 20);
+            datagridview_product_list = new datagridview_product(400, 400, Width - 400 - vertical_gap_0, datagridview_product.Location.Y);
+            textbox_total_cost = new textbox(60, 20, Width - 50 - 10, datagridview_product_list.Location.Y + datagridview_product_list.Height + 20, "");
             Controls.Add(combobox_product);
             Controls.Add(datagridview_product);
             Controls.Add(datagridview_product_list);
