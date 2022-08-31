@@ -5,9 +5,9 @@ using System.Windows.Forms;
 namespace pre_accounting_app {
     internal class tabpage_address : TabPage {
         form_main form_main;
+        internal textbox_input textbox_input_country, textbox_input_state, textbox_input_city, textbox_input_street, textbox_postal_code, textbox_postal_address;
         internal tabpage_address(form_main form_main, TabControl tabcontrol) { // Constructor.
             this.form_main = form_main;
-            textbox_input textbox_input_country, textbox_input_state, textbox_input_city, textbox_input_street, textbox_postal_code, textbox_postal_address;
             int vertical_gap_0, vertical_gap_1, vertical_gap_2, vertical_gap_3, vertical_gap_4, vertical_gap_5;
             vertical_gap_0 = 100;
             vertical_gap_1 = (int)(vertical_gap_0 * 0.7f);

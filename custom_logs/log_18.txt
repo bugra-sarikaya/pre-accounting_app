@@ -1,0 +1,40 @@
+For moving design process to last part, some Location and Size values of components, were assigned statically.
+Definitions of local variables in "tabcontrol" class, were removed and it decreased count of lines but it made it complex.
+IsNullOrEmpty method was found in GeeksforGeeks [1], it was used to check value of text box.
+It was learned, IsNullOrEmpty method is faster than Equals method, in Stack Overflow [2] and it was thought that IsNullOrEmpty is also faster than comparing with equality operator.
+Useage of IsNullOrEmpty method, was removed because it was no longer needed.
+It was learned that Equals method is slightly faster than equality operator, in Rhale78's Blog [3].
+It was learned "e-mail" and "email" phrases are correct, on Writing Explained [4].
+TextBox values of "tabpage_order", "tabpage_address" and "tabpage_payment" classes, were set to be moved to "tabpage_summary" class after changing TabPage index.
+An online tutorial video [5] about relationship of SQL tables, was examined shortly on YouTube.
+Some names of database table columns, were shortened.
+A table relationhips figure was examined again on Stack Overflow [6].
+A new table whose name is "orders", was created on SSMS.
+Another new table was created with "receipts" name on SSMS.
+It was decided to use "expression" word instead of "phrase" and "statement" words for explaining something in texts because it was thought that "phrase" word is more grammatical [7] and "statement" word is more programmatical [8], after a small research.
+A column could not be named as "order" and its reason which is "order" expression is a keyword, was found in Stack Overflow [9].
+Instead of "order" name, "order_code" name was used.
+Date types were examined on a document of Microsoft [10] and "date" column of "receipts" table was set as "datetime" type.
+Columns which have different "varchar" limits, were set as "varchar(50)".
+A blog post was examined shortly for remembering "varchar" keyword [11].
+I was decided to increase usage of double quotation marks for differentiating special expressions.
+Another SSMS tutorial was watched shortly on YouTube [12].
+Appropriate insertion order for tables which have relationships, which is down to top, was learned in Stack Overflow [13].
+"ToString" method which was remembered in Stack Overflow [14]. was used to convert "int" value to "string" value in custom ComboBox class
+Product code column was deleted because this line could not be connected to Foreign Key and after this deletion, product code statements were removed from program code.
+Type of "code" column was "varchar(50)" in "orders" table and it was changed to "int" type.
+"order_code" column was renamed as "order_id" and its type was changed to "int".
+A database relationship diagram was created on SSMS but restrictions was left as default.
+[1] https://www.geeksforgeeks.org/c-sharp-isnullorempty-method/, 1 April 2019.
+[2] ta.speot.is, Community (Bot), https://stackoverflow.com/questions/18507715/why-is-string-isnullorempty-faster-than-comparison, 29 August 2013 10:07 (answered), 20 June 2020 09:12 (edited).
+[3] Randy Hale, https://rhale78.wordpress.com/2011/05/16/string-equality-and-performance-in-c/, 16 May 2011.
+[4] https://writingexplained.org/e-mail-or-email
+[5] iBasskung, https://youtu.be/ymt6rm5XkaM, 17 January 2021.
+[6] Duncan Lock, https://stackoverflow.com/questions/17711324/database-structure-for-customer-table-having-many-orders-per-customer-and-many, 30 July 2021 15:30.
+[7] Cerberus_Reinstate_Monica, https://english.stackexchange.com/questions/8905/what-is-the-difference-between-an-expression-and-a-phrase, 16 January 2011 02:17.
+[8] https://www.joshwcomeau.com/javascript/statements-vs-expressions/, 11th July  2022.
+[9] Jamesking56, Nikola K., https://stackoverflow.com/questions/12788173/sql-query-cant-order-by-column-called-order, 8 October 2012 19:28 (answered), 8 October 2012 20:10 (edited).
+[10] https://docs.microsoft.com/en-us/sql/t-sql/functions/date-and-time-data-types-and-functions-transact-sql?view=sql-server-ver16
+[11] MEHMET KORDACI, https://www.mehmetkordaci.com/blog/2011/07/nvarchar-varchar-farki/.
+[12] TECHINSPEC, https://youtu.be/qBMo-AORiFQ, 2 December 2020.
+[13] Ankit Deshpande, https://stackoverflow.com/questions/32760642/how-to-insert-data-when-we-have-relationship-constraints-in-mysql-database, 24 September 2015 12:05.

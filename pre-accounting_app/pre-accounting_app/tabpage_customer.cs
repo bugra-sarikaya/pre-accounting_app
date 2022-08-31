@@ -5,9 +5,9 @@ using System.Windows.Forms;
 namespace pre_accounting_app {
     internal class tabpage_customer : TabPage {
         form_main form_main;
+        internal textbox_input textbox_input_name, textbox_input_surname, textbox_input_personal_id, textbox_input_tel, textbox_input_email;
         internal tabpage_customer(form_main form_main, TabControl tabcontrol) { // Constructor.
             this.form_main = form_main;
-            textbox_input textbox_input_name, textbox_input_surname, textbox_input_personal_id, textbox_input_tel, textbox_input_email;
             int vertical_gap_0, vertical_gap_1, vertical_gap_2, vertical_gap_3, vertical_gap_4;
             vertical_gap_0 = 100;
             vertical_gap_1 = (int)(vertical_gap_0 * 0.7f);

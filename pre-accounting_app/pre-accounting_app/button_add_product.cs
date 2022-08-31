@@ -18,7 +18,6 @@ namespace pre_accounting_app {
             Size = new Size(width, height);
             Location = new Point(x, y);
             Text = "Add";
-            textbox_total_cost.Text = "0";
             Font = new Font(Font.FontFamily, (int)(Height * 0.25f));
             Click += click_event_handler_button;
         }
@@ -52,7 +51,7 @@ namespace pre_accounting_app {
             form_main.event_handler_mouse_down(sender, (MouseEventArgs)e);
         }
         private int search_product() {
-            for (int i = 0; i < datagridview_list.Rows.Count; i++) if (datagridview_single.Rows[0].Cells[1].Value.Equals(datagridview_list.Rows[i].Cells[1].Value)) return i;
+            for (int i = 0; i < datagridview_list.Rows.Count; i++) if (datagridview_single.Rows[0].Cells[0].Value.Equals(datagridview_list.Rows[i].Cells[0].Value)) return i;
             return -1;
         }
     }
