@@ -5,7 +5,7 @@ using System.Windows.Forms;
 
 namespace pre_accounting_app {
     internal class tabcontrol : TabControl {
-        internal tabcontrol(int width, int height, int x, int y, form_main form_main) { // Constructor.
+        internal tabcontrol(int width, int height, int x, int y, form_main form_main, Panel panel_current) { // Constructor.
             Size = new Size(width, height);
             Location = new Point(x, y);
             SizeMode = TabSizeMode.Fixed;
@@ -14,7 +14,7 @@ namespace pre_accounting_app {
             TabPages.Add(new tabpage_customer(form_main, this));
             TabPages.Add(new tabpage_address(form_main, this));
             TabPages.Add(new tabpage_payment(form_main, this));
-            TabPages.Add(new tabpage_summary(form_main, this));
+            TabPages.Add(new tabpage_summary(form_main, panel_current, this ));
             SelectedIndexChanged += selected_index_changed_event_handler;
         }
         private void selected_index_changed_event_handler(object sender, EventArgs e) {

@@ -14,7 +14,7 @@ namespace pre_accounting_app {
             Location = new Point(0, panel_top.Height);
             Name = "add_receipt";
             Controls.Add(new button_return(form_main, this, panel_top));
-            Controls.Add(new tabcontrol(Width - vertical_gap_0 * 2, Height - horizantal_gap_0 * 2, vertical_gap_0, horizantal_gap_0, form_main));
+            Controls.Add(new tabcontrol(Width - vertical_gap_0 * 2, Height - horizantal_gap_0 * 2, vertical_gap_0, horizantal_gap_0, form_main, this));
             Click += click_event_handler_button;
         }
         private void click_event_handler_button(object sender, EventArgs e) {

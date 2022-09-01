@@ -8,7 +8,7 @@ namespace pre_accounting_app {
         internal textbox textbox_total_cost, textbox_name, textbox_surname, textbox_personal_id, textbox_tel, textbox_email, textbox_country, textbox_state, textbox_city, textbox_street, textbox_postal_code, textbox_postal_address, textbox_card_name, textbox_card_number, textbox_expiry_month, textbox_expiry_year, textbox_cvv;
         form_main form_main;
         TabControl tabcontrol;
-        internal tabpage_summary(form_main form_main, TabControl tabcontrol) { // Constructor.
+        internal tabpage_summary(form_main form_main, Panel panel_current, TabControl tabcontrol) { // Constructor.
             this.form_main = form_main;
             this.tabcontrol = tabcontrol;
             int vertical_gap_0, vertical_gap_1, vertical_gap_2, vertical_gap_3, vertical_gap_4;
@@ -54,7 +54,7 @@ namespace pre_accounting_app {
             Controls.Add(textbox_expiry_month);
             Controls.Add(textbox_expiry_year);
             Controls.Add(textbox_cvv);
-            Controls.Add(new button_next(form_main, tabcontrol));
+            Controls.Add(new button_submit_receipt_add(form_main, panel_current, tabcontrol));
             Click += click_event_handler_button;
         }
         private void click_event_handler_button(object sender, EventArgs e) {

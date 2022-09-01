@@ -1,0 +1,40 @@
+Instead of calling click event handler method of return button, its returning code was implemented in receipt submit button class.
+To access last value of a column, "LAST" SQL function was learned in Stack Overflow [1] but it did not work.
+"LAST_VALUE" function which is an alternative for "LAST" function, was found in an online document of Microsoft [2] and its usages were examined on 2 sources which are a document of Oracle [3] and SQL Server Tutorial [4].
+"LAST_VALUE" function worked in SQL command of retrieving last value of "code" column in "orders" table and for accessing a cell value of result table, a solution was examined on Stack Overflow [5].
+"product" column of "orders" table, was renamed as "id_product" and "code" column was renamed as "id_2".
+"Identity Increment" feature of "id" column in "users" table, was set to "Yes".
+"cost" column was added to "orders" table.
+Insertion SQL command of "orders" table was written.
+While testing, an SQL exception occured with "System.Data.SqlClient.SqlException: 'Column name or number of supplied values does not match table definition.'" text and to solve this, a missing comma was added into SQL command.
+Insertion SQL commands of "customers" and "addresses" tables, were written successfully.
+Accidentally, a bookmark symbol was put on a code line in Visual Studio and to remove it, "CTRL + K + K" shortcut which was found in Stack Overflow [6], was used.
+Insertion SQL command of "payments" table, was written successfully.
+After examining figures in 2 webpages [7] [8] of Stack Overflow, "order_items" table was created and all colums, except primary column, of "order" table was moved to "order_items" table.
+"id_" expressions were added to names of foreign key columns in "receipts" table.
+Relationship diagram was edited by setting "id" column of "orders" table as a foreign key reference of "order_items" table and "id" column of "products" table as a foreign key reference of "order_items" table.
+A different method for inserting a row to a table which has only one column, could not be found.
+"IDENT_CURRENT" function which was found in Stack Overflow [9], returned an unexptected value for last value of primary key column in an empty table.
+"MAX" function which was found in Stack Overflow [10], was used to obtain last "id" value of "orders" table but it returned an empty value because this table was empty.
+Previous empty value was examined and "System.DBNull" expression was noticed on Visual Studio.
+Result table was checked with "DBNull.Value" value which was found in Stack Overflow [11].
+"id_customer", "id_address", and "id_payment" columns were moved to "orders" table from "receipts" table because SQL commands could not be implemented without turning off auto increment feature of "order" table.
+Realionship diagram was updated by changing foreign key references.
+SQL command examples on W3Schools [12], were examined to use "INSERT INTO" and "SELECT" keywords in one SQL command but they did not be useful for adding values from multiple tables.
+Another approach for previous issue, was found in Stack Overflow [13], and it worked.
+"DateTime.Now" was found in a video tutorial [14] on YouTube and it was used insert time value "date" column of "receipts" table.
+Some found SQL methods were removed after updating tables but program new written SQL commands, added data into tables successfully.
+[1] vikas95prasad, https://stackoverflow.com/questions/5191503/how-to-select-the-last-record-of-a-table-in-sql, 3 Feb 2019 05:47.
+[2] https://docs.microsoft.com/en-us/sql/t-sql/functions/last-value-transact-sql?view=sql-server-ver16, 26 August 2022.
+[3] https://docs.oracle.com/cd/B19306_01/server.102/b14200/functions073.htm
+[4] https://www.sqlservertutorial.net/sql-server-window-functions/sql-server-last_value-function/
+[5] Mudassir Hasan, https://stackoverflow.com/questions/23362966/in-an-sql-table-i-get-the-last-columns-last-row-value, 29 April 2014 12:43.
+[6] Makach, Peter Mortensen, https://stackoverflow.com/questions/926046/is-there-a-way-to-bookmark-code-in-a-visual-studio-project, 29 May 2009 13:50 (answered), 20 January 2014 12:12 (edited).
+[7] Duncan Lock, https://stackoverflow.com/questions/17711324/database-structure-for-customer-table-having-many-orders-per-customer-and-many, 30 July 2021 15:30.
+[8] Martin at Mennt, https://stackoverflow.com/questions/5692924/data-modelling-draft-quote-order-invoice, 17 April 2011 10:15.
+[9] rsbarro, Regular Jo, https://stackoverflow.com/questions/5113450/last-id-value-in-a-table-sql-server, 25 February 2011 04:07, 25 September 2017 19:43.
+[10] rayman86, https://stackoverflow.com/questions/5113450/last-id-value-in-a-table-sql-server, 25 February 2011 04:02.
+[11] Tetsuya Yamamoto, https://stackoverflow.com/questions/52751224/check-dbnull-before-casting-c-sharp, 11 October 2018 02:48.
+[12] https://www.w3schools.com/sql/sql_insert_into_select.asp
+[13] Mohammed Safeer, https://stackoverflow.com/questions/25969/insert-into-values-select-from, 4 April 2019 04:09.
+[14] Gokhan ALTAN, https://youtu.be/fs6OIIfWHqI, 5 May 2022.

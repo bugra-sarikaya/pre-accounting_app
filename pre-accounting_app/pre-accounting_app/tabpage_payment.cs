@@ -26,7 +26,7 @@ namespace pre_accounting_app {
             Controls.Add(textbox_input_expiry_month);
             Controls.Add(textbox_input_expiry_year);
             Controls.Add(textbox_postal_cvv);
-            Controls.Add(new button_submit_receipt_add(form_main, tabcontrol));
+            Controls.Add(new button_next(form_main, tabcontrol));
             Click += click_event_handler_button;
         }
         private void click_event_handler_button(object sender, EventArgs e) {
