@@ -22,8 +22,7 @@ namespace pre_accounting_app {
             Click += event_handler_click;
         }
         private void event_handler_click(object sender, EventArgs e) {  // Calling main form method for changing panel.
-            if (panel_current.Name == "customers") panel_next = new panel_customer_add(form_main, panel_top);
-            else if (panel_current.Name == "products") panel_next = new panel_product_add(form_main, panel_top);
+            if (panel_current.Name == "products") panel_next = new panel_product_add(form_main, panel_top);
             else if (panel_current.Name == "receipts") panel_next = new panel_receipt_add(form_main, panel_top);
             ((form_main)Parent.Parent).open_new_panel(panel_current, panel_next);
         }

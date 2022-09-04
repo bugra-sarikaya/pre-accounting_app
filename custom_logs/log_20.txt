@@ -1,0 +1,49 @@
+"panel_customer_add" class was deleted because adding customer without a receipt, was thought as illegal.
+Adding curves to component corners, was canceled.
+"TextAlign" property was learned on a document of Microsoft [1].
+Unused "using" directives were revomed.
+Any method for changing font color of disabled TextBox, could not be found.
+Changing background color method for changing a font color of a readonly TextBox, was found in Stack Overflow [2].
+It was decided to continue to cancelled rounded corners addition process and 2 useful codes were found in Stack Overflow [3] and CodeProject [4].
+Form border corners were changed as rounded but it was noticed that angles of some corners, were different than others.
+To learn reason of preivous problem, relevant "AddArch" method was researched and its detail, was learnt in Stack Overflow [5] but reason of problem could not be found.
+On internet, different approaches were read for smoothing rounded corners to fix previous problem but they could not be applied because of their complexity.
+An simple aproach was found in Stack Overflow [6] and it worked.
+A group people icon was downloaded flaticon [7].
+While trying inherit "button_main" class to created "button_main_customers" class, and error witch CS7036 code and "There is no argument given that corresponds to the required formal parameter" text, occured.
+For solving CS7036 error, base constructor was added to child constructor by benefiting a webpage of Stack Overflow [8].
+Text alignment method for "Label" class, was learnt in GeeksforGeeks [9].
+Button hover effect was disabled by overriding "OnMouseEnter" without calling base method after benefiting an answer from DatabaseForum.info.
+A difference which is two pixel amount, was detected between original and rounded button and decrementing was applied manually to size settings of an inner component because it could not be implemented dynamically.
+A "Timer" handling system was written to reduce "Timer" usage.
+Difference between "Click" event and "MouseClick" event, which is that "MouseClick" event is more detailed, was learnt in Stack Overflow [11].
+Variable refoctoring method was learnt on YouTube [12].
+It was realized that mouse enter event handler method is not called after overriding "OnMouseEnter" method without calling base method.
+Color code of "Midnight Red Color" was found in Color-Name.com and it was used for background color customer main button.
+Customer main button was customized by improving its visual design.
+Colors of customers icon, was inverted on Aseprite by benefiting Google Code Archive [14].
+A product icon was downloaded from PNGitem [15].
+A document icon was downloaded from Very Icon [16] for receipts button but its line thickness was not liked.
+A product icon was downloaded from PNGitem [17].
+Centering image value, which is "PictureBoxSizeMode.CenterImage", was found in Stack Overflow [18].
+"ContentAlignment.MiddleCenter" value could not centered the text perfectly but research of its solution, was delayed.
+All main buttons were customized with edited icon images on Aseprite.
+Internship diary was deleted.
+[1] https://docs.microsoft.com/tr-tr/dotnet/api/system.windows.forms.textbox.textalign?view=windowsdesktop-6.0
+[2] LarsTech, https://stackoverflow.com/questions/20688408/how-do-you-change-the-text-color-of-a-readonly-textbox, 19 Dec 2013 18:24.
+[3] TaW, https://stackoverflow.com/questions/28486521/rounded-edges-in-button-c-sharp-winforms, 7 August 2019 14:36.
+[4] OriginalGriff, https://www.codeproject.com/Questions/427999/how-to-make-a-round-window-form-in-csharp-net-and, 25 July 2012 01:23.
+[5] Soner Gönül, https://stackoverflow.com/questions/20443897/addarc-c-sharp-explain, 7 Dec 2013 16:52.
+[6] gigi, https://stackoverflow.com/questions/19167463/oddly-drawn-graphicspath-with-graphics-fillpath, 17 February 2014 14:20.
+[7] https://www.flaticon.com/free-icon/user-group_74577
+[8] shirbr510, https://stackoverflow.com/questions/38758760/resolve-error-there-is-no-argument-given-that-corresponds-to-required-formal-pa, 13 December 2020 09:18.
+[9] ankita_saini, https://www.geeksforgeeks.org/how-to-set-the-alignment-of-the-text-in-the-label-in-c-sharp/, 30 June 2019.
+[10] Gavin Jin - MSFT, http://www.databaseforum.info/5/1138080.aspx.
+[11] Michael Petrotta, https://stackoverflow.com/questions/3852410/what-is-the-difference-between-a-click-and-mouseclick, 4 October 2010 02:10.
+[12] Software Development with Morteza, https://youtu.be/i0iPWCL5vus, 7 September 2018.
+[13] https://www.color-name.com/midnight-red.color
+[14] https://code.google.com/archive/p/aseprite/wikis/Invert.wiki
+[15] https://www.pngitem.com/middle/hRTiim_transparent-product-icon-png-product-vector-icon-png/
+[16] zhongxia_87887, https://www.veryicon.com/icons/business/office-icon-series/document-file-3.html.
+[17] zuozuozuozuo, https://www.veryicon.com/icons/miscellaneous/regular-icon-1/receipt-filled-1.html.
+[18] user2954518, https://stackoverflow.com/questions/6882802/how-to-center-image-in-picturebox-on-resize, 20 December 2017 13:49.

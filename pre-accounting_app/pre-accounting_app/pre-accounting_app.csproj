@@ -48,6 +48,15 @@
     <Compile Include="button_main.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="button_main_customers.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="button_main_products.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="button_main_receipts.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="button_next.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -83,9 +92,6 @@
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="numericupdown.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="panel_customer_add.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="panel_product_add.cs">
