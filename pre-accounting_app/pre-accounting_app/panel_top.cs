@@ -10,6 +10,7 @@ namespace pre_accounting_app {
             Width = width = form.Width;
             Height = height;
             button_close button_close = new button_close(this);
+            BackColor = Color.Transparent;
             Controls.Add(button_close);
             Controls.Add(new button_minimize(button_close));
             MouseDown += event_handler_mouse_down;

@@ -48,10 +48,9 @@ namespace pre_accounting_app {
             label_text.MouseUp += event_handler_mouse_up_label_text;
             BackColor = Color.FromArgb(255, 173, 16, 23);
             color_red = color_red_0 = BackColor.R;
+            TabStop = false;
             Controls.Add(picturebox_icon);
             Controls.Add(label_text);
-            FlatStyle = FlatStyle.Flat;
-            FlatAppearance.BorderSize = 0;
             timer = new Timer();
             timer.Enabled = false;
             timer.Tick += event_handler_timer;
@@ -62,6 +61,9 @@ namespace pre_accounting_app {
         }
         protected override void OnMouseEnter(EventArgs e) {
             timer.Enabled = true;
+        }
+        protected override void OnMouseDown(MouseEventArgs e) {
+            event_handler_mouse_down(this, e);
         }
         private void event_handler_mouse_click(object sender, MouseEventArgs e) { // Calling main form method for changing panel.
             panel_next = new panel_customers(form_current, panel_top);
@@ -118,11 +120,12 @@ namespace pre_accounting_app {
         }
         private void event_handler_mouse_up(object sender, MouseEventArgs e) { // Enabling pressing button effect.
             mouse_down = false;
+            if (mouse_is_over_button(this) && e.Button == MouseButtons.Left) event_handler_mouse_click(this, e);
         }
         private void event_handler_mouse_leave(object sender, EventArgs e) { // Disabling pressing button effect.
             limit_reducer = 0;
         }
-        private Color change_red_color(Color color, int color_red) { // Changing red color value of image.
+        private Color change_red_color(Color color, int color_red) { // Changing red color value of button.
             if (color_red <= limit_red && color_red >= color_red_0) color = Color.FromArgb(color.A, color_red, color.G, color.B);
             return color;
         }

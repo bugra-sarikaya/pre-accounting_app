@@ -14,21 +14,35 @@ namespace pre_accounting_app {
             Text = this.placeholder_text = placeholder_text;
             ForeColor = Color.Silver;
             BorderStyle = BorderStyle.None;
-            Enter += event_handler_enter_text;
-            Leave += event_handler_leave_text;
+            Enter += event_handler_enter;
+            Leave += event_handler_leave;
+            KeyDown += event_handler_key_down;
+            KeyPress += event_handler_key_press;
         }
-        private void event_handler_enter_text(object sender, EventArgs e) { // Enabling focusing effects.
+        private void event_handler_enter(object sender, EventArgs e) { // Enabling focusing effects.
             if (!string.IsNullOrWhiteSpace(Text) && ForeColor != Color.Black) {
                 Text = "";
                 if (placeholder_text == "Password") PasswordChar = '●';
                 ForeColor = Color.Black;
             }
         }
-        private void event_handler_leave_text(object sender, EventArgs e) { // Disabling focusing effects.
+        private void event_handler_leave(object sender, EventArgs e) { // Disabling focusing effects.
             if (string.IsNullOrWhiteSpace(Text)) {
                 ForeColor = Color.Silver;
                 if (placeholder_text == "Password") PasswordChar = '\0';
                 Text = placeholder_text;
+            }
+        }
+        private void event_handler_key_down(object sender, KeyEventArgs e) {
+            if (e.KeyCode == Keys.Enter) {
+                e.SuppressKeyPress = true;
+            }
+        }
+        private void event_handler_key_press(object sender, KeyPressEventArgs e) {
+            if (placeholder_text == "Personal ID" || placeholder_text == "Telephone" || placeholder_text == "Postal Code" || placeholder_text == "Card Number" || placeholder_text == "Expiry Month" || placeholder_text == "Expiry Year" || placeholder_text == "CVV") {
+                if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar)) e.Handled = true;
+            } else if (placeholder_text == "Price") {
+                if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && (e.KeyChar != '.' || (e.KeyChar != ','))) e.Handled = true;
             }
         }
     }

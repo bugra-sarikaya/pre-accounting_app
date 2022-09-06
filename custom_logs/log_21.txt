@@ -1,0 +1,56 @@
+Visual style of return button was changed by copying button main code.
+Method for stretching data columns to fill table, which is using "DataGridViewAutoSizeColumnMode.Fill" value, was found in Stack Overflow [1] and it was used.
+A data table of "customers" table, was showed on customers panel.
+Visual style of addition buttons, was changed.
+Name of data table class, in receipts panel, was renamed as "datagridview_products_preview" because another data table class whose name is "datagridview_products" was planned to create.
+A data table was added to product panel.
+Submit button was edited.
+Another data table was added into receipts panel.
+"button_add_product", "button_next", "button_submit_receipt_add" and "tabcontrol" classes were edited.
+Usage of "textbox" class removed in "tabpage_order" class and created "label_text" was used instead of that.
+" TL" string value was added to total cost text but adding " TL" string value to data table process was canceled.
+A video tutorial about GroupBox, was watched on YouTube [2] and it was used.
+In "groupbox_customer" class, widths of label components which are adjacent to right edge, were decreased 1 pixel and GroupBox, was increased 1 pixel because otherwise, labels would not be intersected with GroupBox edges.
+"groupbox_customer", "groupbox_address" and "groupbox_payment" classes were added to "tabpage_summary" class for organising receipt data, visually.
+Location and size values of Label components and GroubBox, were edited manually because Label components were upon GroupBox border and also Label components were too close to borders.
+A bug which causes changing BackColor to transparent when mouse is down on buttons except main buttons, was detected.
+It was realized that main buttons were non-problematic because existences of PictureBox and Label components, were preventing the bug by covering button.
+To solve prevous button, OnMouseDown method was tried to be overridden without calling base method in its definition but it did not work.
+Another argument value instead of sender (object), which is class name, was learned in Code Project [3].
+To solve problems which were occured after disabling OnMouseDown method, mouse down event handler was called in overrided OnMouseDown method and mouse click event handler was called in mouse up event handler method with an "if" statement.
+"changement" word could not be found in most of online English dictionaries.
+Variable name modifications were completed after adding GroupBox classes.
+To avoid halting issues after SQL errors, "try - catch" statment for SQL, was found in Stack Overflow [4] and it was used.
+Widths ob Label text titles was increased because colon of "Postal Address:" text was not being showed.
+Usage of "IsNullOrEmpty" method examined on Reactgo [5] and it was used for checking receipt input values before inserting.
+"check_inputs" method was written for checking missing input values of insertion processes.
+" TL" string was removed before insterting total cost input value by using "Replace" method which was remembered in C# Corner [6].
+It was noticed border of that product submit button, changes after clicking different areas on form and reason of this bug, could not be found but it was observed that problem disappeared after removing AcceptButton assignment for this button.
+To solve previous problem AcceptButton assignment was removed because it was noticed that assignment does not work and solution of AcceptButton problem could not be found.
+Mouse click event handlers for disabling focusing, wac changed to mouse down event handlers to increase disabling speed.
+Any east method for changing border color of TextBox could not be found on internet.
+Focusing input TextBox effect of login form, was modified and implemented on other input TextBox classes.
+Previously examined code from Stack Overflow [7], was examined again and it was utilized to draw a red line to form border.
+Colors of panels and components like panels, were changed to transparent.
+Location of close button was edited manually after border color changement.
+Color of GroupBox titles, were changed.
+To disable adding new line feature when pressin "Enter" in input TextBox, a code which was found in Stack Overflow [8], was used.
+TabStop property which was found in Stack Oveflow [9], was set as "false" to disable appearing border on button after pressing "Tab".
+A code which was found in Delft Stack [10], was used to validate numeric data values for inputs.
+In database types of some columns, were changed to "int".
+"DBCC CHECKIDENT ('table', RESEED, 0)" SQL query which was found in Stack Overflow, was used to reset auto increment value.
+Developing process was completed but there are still some issues like form refresh rate and deleting feature.
+A video of program usage, was captured.
+"Phantom - Vestron Vulture" song from YouTube [12], was added to the video by Movavi Video Editor 14 and video file was exported with "demo.mp4" name.
+[1] Chris, https://stackoverflow.com/questions/18666582/datagridview-autofit-and-fill, 23 October 2015 09:47.
+[2] Emir Özdemir, https://youtu.be/E9cgzL8A0iE, 11 November 2020.
+[3] FernandoUY, https://www.codeproject.com/Questions/107499/Overriding-MouseDown-MouseUp-in-a-class, 5 September 2010 15:55.
+[4] Nathan, Marek, https://stackoverflow.com/questions/19970397/c-sharp-try-catch-confusion, 14 November 05:42 (answered), 14 November 2013 06:16 (edited).
+[5] Sai gowtham, https://reactgo.com/c-sharp-check-empty-string/, 9 June 2021.
+[6] Mahesh Chand, https://www.c-sharpcorner.com/UploadFile/mahesh/add-remove-replace-strings-in-C-Sharp/, 23 August 2019.
+[7] TaW, https://stackoverflow.com/questions/28486521/rounded-edges-in-button-c-sharp-winforms, 7 August 2019 14:36.
+[8] puneet, Community (Bot), https://stackoverflow.com/questions/18110311/disable-enter-key-in-textboxes, 7 August 2013 18:10 (answered), 23 May 2017 11:48 (edited).
+[9] https://stackoverflow.com/questions/56414210/annoying-border-around-button-when-pressing-tab-and-clicking-a-button
+[10] https://www.delftstack.com/howto/csharp/how-to-make-a-textbox-that-only-accepts-numbers-in-csharp/, 25 June 2020.
+[11] Philipp, https://stackoverflow.com/questions/10085051/auto-increment-column-in-sql-server-does-not-always-start-at-1, 11 April 2012 20:42.
+[12] onlyyesterday1967, https://youtu.be/526jWbC82hU, 8 April 2017.

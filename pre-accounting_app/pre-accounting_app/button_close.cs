@@ -17,7 +17,8 @@ namespace pre_accounting_app {
             Width = (int)(top_panel.Height * scale);
             Height = Width;
             gap = (top_panel.Height - Height) / 2;
-            Location = new Point(top_panel.Width - Width - gap, gap);
+            Location = new Point(top_panel.Width - Width - gap - 2, gap);
+            BackColor = Color.Transparent;
             string address_close_symbol = "pictures\\close_symbol.png";
             Image close_symbol = Image.FromFile(address_close_symbol);
             bitmap_close_symbol = new Bitmap(close_symbol, new Size((int)(Width * scale), (int)(Height * scale)));
@@ -26,16 +27,20 @@ namespace pre_accounting_app {
             FlatAppearance.BorderSize = 0;
             FlatAppearance.MouseOverBackColor = Color.Transparent;
             FlatAppearance.MouseDownBackColor = Color.Transparent;
+            TabStop = false;
             timer = new Timer();
             timer.Enabled = false;
             timer.Tick += event_handler_timer;
-            MouseClick += event_handler_mouse_clicked;
+            MouseClick += event_handler_mouse_click;
             MouseDown += event_handler_mouse_down;
             MouseUp += event_handler_mouse_up;
             MouseLeave += event_handler_mouse_leave;
         }
         protected override void OnMouseEnter(EventArgs e) {
             timer.Enabled = true;
+        }
+        protected override void OnMouseDown(MouseEventArgs e) {
+            event_handler_mouse_down(this, e);
         }
         private bool mouse_is_over_button(button_close button) { // Detecting situation of hovering mouse cursor over button.
             return button.ClientRectangle.Contains(button.PointToClient(Cursor.Position));
@@ -53,7 +58,7 @@ namespace pre_accounting_app {
             }
             if(!mouse_is_over_button(this) && !mouse_down && color_pixel_red == 0) timer.Enabled = false;
         }
-        private void event_handler_mouse_clicked(object sender, MouseEventArgs e) { // Closing application if button is clicked with left mouse button.
+        private void event_handler_mouse_click(object sender, MouseEventArgs e) { // Closing application if button is clicked with left mouse button.
             if (e.Button == MouseButtons.Left) Application.Exit();
         }
         private void event_handler_mouse_down(object sender, MouseEventArgs e) { // Enabling pressing button effect.
@@ -66,6 +71,7 @@ namespace pre_accounting_app {
         }
         private void event_handler_mouse_up(object sender, MouseEventArgs e) { // Enabling pressing button effect.
             mouse_down = false;
+            if (mouse_is_over_button(this) && e.Button == MouseButtons.Left) event_handler_mouse_click(this, e);
         }
         private void event_handler_mouse_leave(object sender, EventArgs e) { // Disabling pressing button effect.
             limit_reducer = 0;

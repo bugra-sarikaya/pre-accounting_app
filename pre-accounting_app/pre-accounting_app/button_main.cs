@@ -1,23 +1,21 @@
-﻿using System;
-using System.Drawing;
+﻿using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Windows.Forms;
 
 namespace pre_accounting_app {
     internal class button_main : Button {
-        Bitmap bitmap_icon_customers;
         internal static int width = 230;
         internal static int height = 100;
         internal button_main(int x, int y) { // Constructor.
-            float scale = 0.75f;
             Width = width;
-            Height = 100;
+            Height = height;
             Location = new Point(x, y);
             FlatStyle = FlatStyle.Flat;
             FlatAppearance.BorderSize = 0;
             FlatAppearance.MouseOverBackColor = Color.Transparent;
             FlatAppearance.MouseDownBackColor = Color.Transparent;
             Region = new Region(create_rounded_rectangle(new RectangleF(0, 0, Width, Height), 36));
+            TabStop = false;
         }
         private GraphicsPath create_rounded_rectangle(RectangleF rectanglef, int r, bool fill = false) { // Creating rounded rectangle.
             GraphicsPath path = new GraphicsPath();

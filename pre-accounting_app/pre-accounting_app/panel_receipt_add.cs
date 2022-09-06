@@ -7,18 +7,19 @@ namespace pre_accounting_app {
         form_main form_main;
         internal panel_receipt_add(form_main form_main, panel_top panel_top) { // Constructor.
             this.form_main = form_main;
-            int vertical_gap_0, horizantal_gap_0;
-            vertical_gap_0 = horizantal_gap_0 = (int)(panel_top.Height * 0.7f);
+            int horizantal_gap, vertical_gap;
+            horizantal_gap = vertical_gap = panel_top.height * 2;
             Width = form_main.Width;
             Height = form_main.Height - panel_top.height;
             Location = new Point(0, panel_top.Height);
+            BackColor = Color.Transparent;
             Name = "add_receipt";
             Controls.Add(new button_return(form_main, this, panel_top));
-            Controls.Add(new tabcontrol(Width - vertical_gap_0 * 2, Height - horizantal_gap_0 * 2, vertical_gap_0, horizantal_gap_0, form_main, this));
-            Click += click_event_handler_button;
+            Controls.Add(new tabcontrol(Width - vertical_gap * 2, Height - horizantal_gap * 2, vertical_gap, horizantal_gap, form_main, this));
+            MouseDown += event_handler_mouse_down;
         }
-        private void click_event_handler_button(object sender, EventArgs e) {
-            form_main.event_handler_mouse_down(sender, (MouseEventArgs)e);
+        private void event_handler_mouse_down(object sender, MouseEventArgs e) { // Disabling focusing after pressing on form.
+            form_main.event_handler_mouse_down(sender, e);
         }
     }
 }

@@ -7,10 +7,9 @@ using System.Windows.Forms;
 
 namespace pre_accounting_app {
     internal class combobox_product : ComboBox {
-        datagridview_product datagridview_product;
+        internal datagridview_products_preview datagridview_product;
         form_main form_main;
-        internal combobox_product(int width, int height, int x, int y, datagridview_product datagridview_product, form_main form_main) {  // Constructor.
-            this.datagridview_product = datagridview_product;
+        internal combobox_product(int width, int height, int x, int y, form_main form_main) {  // Constructor.
             this.form_main = form_main;
             Size = new Size(width, height);
             Location = new Point(x, y);

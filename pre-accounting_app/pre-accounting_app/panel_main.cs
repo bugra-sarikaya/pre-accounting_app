@@ -10,6 +10,7 @@ namespace pre_accounting_app {
             Width = form_main.Width;
             Height = form_main.Height - panel_top.Height;
             Location = new Point(0, panel_top.Height);
+            BackColor = Color.Transparent;
             Name = "main";
             button_main_customers button_main_customers = new button_main_customers((Width - button_main.width) / 2, horizantal_gap_0, form_main, this, panel_top);
             button_main_products button_main_products = new button_main_products((Width - button_main.width) / 2, button_main_customers.Location.Y + button_main_customers.Height + horizantal_gap_1, form_main, this, panel_top);
